@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Stackroom — A Catalog of AI Tools</title>
+<meta name="description" content="AI Stackroom is a hand-sorted directory of 60+ AI tools for writing, image, video, audio, code, productivity, research, and design — searchable and organized by category.">
+<meta name="keywords" content="AI tools, AI tool directory, best AI tools 2026, AI tools list, ChatGPT alternatives, AI image generators, AI video tools, AI coding tools, AI productivity tools">
+<meta name="author" content="AI Stackroom">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aistackroom.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Stackroom — A Catalog of AI Tools">
+<meta property="og:description" content="A hand-sorted directory of 60+ AI tools across writing, image, video, audio, code, and productivity — searchable and organized by category.">
+<meta property="og:url" content="https://aistackroom.com/">
+<meta property="og:site_name" content="AI Stackroom">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Stackroom — A Catalog of AI Tools">
+<meta name="twitter:description" content="A hand-sorted directory of 60+ AI tools across writing, image, video, audio, code, and productivity.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI Stackroom",
+  "description": "A hand-sorted directory of AI tools organized by category.",
+  "url": "https://aistackroom.com/"
+}
+</script>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect x='1' y='1' width='28' height='28' fill='%23FBF5EA' stroke='%23242640' stroke-width='1.4'/%3E%3Crect x='5' y='6' width='20' height='3.4' fill='%235B54D6'/%3E%3Crect x='5' y='13.3' width='20' height='3.4' fill='%23E85C42'/%3E%3Crect x='5' y='20.6' width='12' height='3.4' fill='%23E8A73B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF5EA;
+    --paper-card:#FFFFFF;
+    --ink:#242640;
+    --ink-soft:#615E78;
+    --line:#E7DCC6;
+    --teal:#0E8F82;
+    --mustard:#E8A73B;
+    --rule:#D9CDAF;
+    --coral:#E85C42;
+    --indigo:#5B54D6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+
+  /* ---------- Header / Hero ---------- */
+  header{
+    padding:28px 6vw 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .brandrow{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding-bottom:18px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .logo-wrap{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .logo-mark{
+    flex-shrink:0;
+  }
+  .brand{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+  }
+  .brand b{color:var(--ink);}
+  .drawer-tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    border:1px solid var(--rule);
+    padding:4px 10px;
+    border-radius:2px;
+  }
+  .hero{
+    padding:48px 0 56px;
+  }
+  .hero h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:clamp(40px,6.5vw,86px);
+    line-height:0.98;
+    margin:0 0 18px;
+    max-width:14ch;
+  }
+  .hero h1 em{
+    font-style:normal;
+    font-weight:500;
+    color:var(--ink);
+  }
+  .hero p{
+    max-width:52ch;
+    font-size:17px;
+    line-height:1.6;
+    color:var(--ink-soft);
+    margin:0 0 26px;
+  }
+  .hero-meta{
+    display:flex;
+    gap:28px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    flex-wrap:wrap;
+  }
+  .hero-meta span b{
+    display:block;
+    font-size:20px;
+    color:var(--ink);
+    font-family:'Fraunces',serif;
+    font-weight:500;
+  }
+
+  /* ---------- Search ---------- */
+  .searchbar{
+    max-width:640px;
+    margin-top:34px;
+    display:flex;
+    border:1.5px solid var(--indigo);
+    border-radius:3px;
+  }
+  .searchbar input{
+    flex:1;
+    border:none;
+    background:transparent;
+    padding:14px 16px;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    color:var(--ink);
+    outline:none;
+  }
+  .searchbar input::placeholder{color:#8b8a7d;}
+  .searchbar span{
+    padding:14px 16px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    border-left:1px solid var(--line);
+  }
+
+  /* ---------- Layout: index + cards ---------- */
+  .catalog{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:0;
+    padding:0 6vw 80px;
+  }
+  .index-col{
+    padding-top:44px;
+    position:sticky;
+    top:0;
+    align-self:start;
+    height:fit-content;
+  }
+  .index-col h2{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+    font-weight:500;
+  }
+  .cat-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    border-bottom:1px solid var(--line);
+    padding:11px 4px;
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    color:var(--ink);
+    cursor:pointer;
+    gap:8px;
+  }
+  .cat-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    flex-shrink:0;
+    margin-right:8px;
+    display:inline-block;
+  }
+  .cat-btn-label{
+    display:flex;
+    align-items:center;
+    flex:1;
+  }
+  .cat-btn small{
+    font-family:'IBM Plex Mono',monospace;
+    color:var(--ink-soft);
+    font-size:11px;
+  }
+  .cat-btn.active{color:var(--indigo); font-weight:600;}
+  .cat-btn:hover{color:var(--indigo);}
+
+  .cards-col{
+    padding-top:44px;
+    border-left:1px solid var(--rule);
+    padding-left:36px;
+  }
+  .cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  .card{
+    background:var(--paper-card);
+    padding:22px 20px 20px;
+    display:flex;
+    flex-direction:column;
+    min-height:210px;
+    position:relative;
+    border-top:4px solid var(--ink);
+  }
+  .card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:14px;
+  }
+  .card-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+  }
+  .card-cat{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    color:var(--ink);
+    background:var(--ink);
+    padding:2px 8px;
+    border-radius:2px;
+    white-space:nowrap;
+    color:#fff;
+  }
+  .card h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:22px;
+    margin:0 0 8px;
+  }
+  .card p{
+    font-size:14px;
+    line-height:1.55;
+    color:var(--ink-soft);
+    margin:0 0 18px;
+    flex:1;
+  }
+  .card-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid var(--line);
+    padding-top:12px;
+  }
+  .card-price{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+  }
+  .card-link{
+    font-family:'Inter',sans-serif;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--indigo);
+    text-decoration:none;
+    border-bottom:1px solid var(--indigo);
+    padding-bottom:1px;
+  }
+  .card-link:hover{color:var(--coral); border-color:var(--coral);}
+
+  .empty-msg{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+    padding:40px 0;
+  }
+
+  /* ---------- Ad slots (for AdSense later) ---------- */
+  .ad-slot{
+    grid-column:1/-1;
+    background:repeating-linear-gradient(45deg,#00000006,#00000006 8px,transparent 8px,transparent 16px);
+    border:1px dashed var(--rule);
+    padding:16px;
+    text-align:center;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    border-top:1px solid var(--rule);
+    padding:30px 6vw 40px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+
+  @media (max-width:820px){
+    .catalog{grid-template-columns:1fr;}
+    .index-col{position:static; display:flex; flex-wrap:wrap; gap:4px 18px; padding-bottom:10px;}
+    .cat-btn{border-bottom:none; width:auto; padding:6px 0;}
+    .cards-col{border-left:none; padding-left:0; border-top:1px solid var(--rule); margin-top:10px;}
+  }
+
+  :focus-visible{outline:2px solid var(--teal); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brandrow">
+    <div class="logo-wrap">
+      <svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
+        <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
+        <rect x="5" y="13.3" width="20" height="3.4" fill="#E85C42"/>
+        <rect x="5" y="20.6" width="12" height="3.4" fill="#E8A73B"/>
+      </svg>
+      <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
+    </div>
+    <div class="drawer-tag" id="liveCount">61 tools shelved</div>
+  </div>
+  <div class="hero">
+    <h1>Every AI Tool,<br><em>in one place.</em></h1>
+    <p>A hand-sorted catalog of the software actually worth your time this year — writing, images, video, code, and the rest. No noise, no rankings for sale.</p>
+    <div class="hero-meta">
+      <span><b>8</b>categories</span>
+      <span><b>61</b>tools indexed</span>
+      <span><b>2026</b>last reshelved</span>
+    </div>
+    <div class="searchbar">
+      <input id="searchInput" type="text" placeholder="Search by name, task, or category — e.g. “video” or “notes”">
+      <span>⏎ FILTER</span>
+    </div>
+  </div>
+</header>
+
+<div class="catalog">
+  <div class="index-col">
+    <h2>Browse by drawer</h2>
+    <div id="catList"></div>
+  </div>
+
+  <div class="cards-col">
+    <div class="cards-grid" id="cardsGrid"></div>
+    <p class="empty-msg" id="emptyMsg" style="display:none;">No cards match that search — try a broader term.</p>
+  </div>
+</div>
+
+<footer>
+  <span>AI STACKROOM · a directory, updated by hand</span>
+  <span>Contact: <a href="mailto:mehranbaig309@gmail.com" style="color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);">mehranbaig309@gmail.com</a></span>
+  <span>Listings are editorial, not paid placement</span>
+</footer>
+
+<script>
+const TOOLS = [
+  {name:"ChatGPT", cat:"Writing & Chat", desc:"General-purpose chat assistant for drafting, brainstorming, and answering questions across almost any subject.", price:"Free / from $20mo", url:"https://chat.openai.com"},
+  {name:"Claude", cat:"Writing & Chat", desc:"Conversational assistant known for long-context reasoning, careful writing, and document analysis.", price:"Free / from $20mo", url:"https://claude.ai"},
+  {name:"Gemini", cat:"Writing & Chat", desc:"Google's assistant, tightly woven into Search, Docs, and Gmail for everyday drafting.", price:"Free / paid tiers", url:"https://gemini.google.com"},
+  {name:"Perplexity", cat:"Research", desc:"Answer engine that cites live sources instead of just generating prose from memory.", price:"Free / from $20mo", url:"https://www.perplexity.ai"},
+  {name:"NotebookLM", cat:"Research", desc:"Turns your own uploaded documents into a queryable notebook, summaries, and audio overviews.", price:"Free", url:"https://notebooklm.google"},
+  {name:"Elicit", cat:"Research", desc:"Helps researchers search, extract, and summarize findings across academic papers.", price:"Free / paid tiers", url:"https://elicit.com"},
+  {name:"Midjourney", cat:"Image", desc:"Discord-based image generator prized for painterly, high-craft default aesthetics.", price:"From $10mo", url:"https://www.midjourney.com"},
+  {name:"DALL·E 3", cat:"Image", desc:"OpenAI's image model, built into ChatGPT for prompt-to-image generation and editing.", price:"Included with ChatGPT Plus", url:"https://openai.com/dall-e-3"},
+  {name:"Ideogram", cat:"Image", desc:"Image generator with a particular strength at rendering legible text inside graphics.", price:"Free / paid tiers", url:"https://ideogram.ai"},
+  {name:"Adobe Firefly", cat:"Image", desc:"Adobe's generative image and design tool, integrated across Photoshop and Express.", price:"Free / paid tiers", url:"https://firefly.adobe.com"},
+  {name:"Runway", cat:"Video", desc:"Text-to-video and video-editing suite used widely for short-form generative film work.", price:"From $12mo", url:"https://runwayml.com"},
+  {name:"Pika", cat:"Video", desc:"Fast text- and image-to-video generator aimed at quick social-style clips.", price:"Free / paid tiers", url:"https://pika.art"},
+  {name:"Sora", cat:"Video", desc:"OpenAI's text-to-video model for generating short cinematic clips from prompts.", price:"Included with ChatGPT Plus", url:"https://openai.com/sora"},
+  {name:"CapCut", cat:"Video", desc:"Editing app with AI-assisted captions, cuts, and effects, popular for short-form content.", price:"Free / paid tiers", url:"https://www.capcut.com"},
+  {name:"ElevenLabs", cat:"Audio", desc:"Realistic text-to-speech and voice-cloning engine used for narration and dubbing.", price:"Free / paid tiers", url:"https://elevenlabs.io"},
+  {name:"Suno", cat:"Audio", desc:"Generates full songs — vocals and instrumentation — from a text description.", price:"Free / paid tiers", url:"https://suno.com"},
+  {name:"Udio", cat:"Audio", desc:"Text-to-music generator focused on studio-quality, genre-flexible song output.", price:"Free / paid tiers", url:"https://www.udio.com"},
+  {name:"Descript", cat:"Audio", desc:"Edits audio and video by editing a text transcript, plus AI voice cleanup tools.", price:"Free / paid tiers", url:"https://www.descript.com"},
+  {name:"GitHub Copilot", cat:"Code", desc:"In-editor pair programmer that suggests and completes code as you type.", price:"From $10mo", url:"https://github.com/features/copilot"},
+  {name:"Cursor", cat:"Code", desc:"AI-native code editor built around chat-driven edits across an entire codebase.", price:"Free / from $20mo", url:"https://cursor.sh"},
+  {name:"Claude Code", cat:"Code", desc:"Command-line agent that plans, writes, and runs code changes across a project.", price:"Usage-based", url:"https://claude.com/claude-code"},
+  {name:"Replit", cat:"Code", desc:"Browser-based coding environment with an AI agent that can scaffold and deploy apps.", price:"Free / paid tiers", url:"https://replit.com"},
+  {name:"Notion AI", cat:"Productivity", desc:"Writing and summarizing assistant built directly into Notion's docs and databases.", price:"Add-on to Notion", url:"https://www.notion.com/product/ai"},
+  {name:"Otter.ai", cat:"Productivity", desc:"Transcribes and summarizes meetings in real time, with searchable notes afterward.", price:"Free / paid tiers", url:"https://otter.ai"},
+  {name:"Superhuman", cat:"Productivity", desc:"Email client with AI-drafted replies and shortcuts aimed at fast inbox triage.", price:"From $25mo", url:"https://superhuman.com"},
+  {name:"Motion", cat:"Productivity", desc:"Automatically schedules tasks and meetings into your calendar based on priority.", price:"From $19mo", url:"https://www.usemotion.com"},
+  {name:"Gamma", cat:"Design & Slides", desc:"Generates presentation decks and documents from a short outline or prompt.", price:"Free / paid tiers", url:"https://gamma.app"},
+  {name:"Canva Magic Studio", cat:"Design & Slides", desc:"Suite of AI design tools inside Canva — backgrounds, text-to-image, resizing.", price:"Free / paid tiers", url:"https://www.canva.com/magic-studio"},
+  {name:"Framer AI", cat:"Design & Slides", desc:"Generates and edits full marketing websites from a prompt, ready to publish.", price:"Free / paid tiers", url:"https://www.framer.com/ai"},
+  {name:"Galileo AI", cat:"Design & Slides", desc:"Turns short text prompts into editable UI screen designs for product teams.", price:"Paid", url:"https://www.usegalileo.ai"},
+  {name:"Synthesia", cat:"Video", desc:"Generates presenter-style videos from text using AI avatars, no camera needed.", price:"From $18mo", url:"https://www.synthesia.io"},
+  {name:"Character.AI", cat:"Writing & Chat", desc:"Platform for chatting with customizable AI personas built by its community.", price:"Free / paid tiers", url:"https://character.ai"},
+  {name:"Poe", cat:"Writing & Chat", desc:"Single subscription that gives access to many different chat models in one place.", price:"Free / paid tiers", url:"https://poe.com"},
+  {name:"Fireflies.ai", cat:"Productivity", desc:"Meeting recorder and summarizer that syncs notes into your existing work tools.", price:"Free / paid tiers", url:"https://fireflies.ai"},
+  {name:"Consensus", cat:"Research", desc:"Search engine that answers questions using findings drawn from scientific papers.", price:"Free / paid tiers", url:"https://consensus.app"},
+  {name:"Leonardo AI", cat:"Image", desc:"Image generator geared toward game assets, concept art, and stylized graphics.", price:"Free / paid tiers", url:"https://leonardo.ai"},
+  {name:"HeyGen", cat:"Video", desc:"Creates talking-avatar videos with lip-synced translation into other languages.", price:"Free / paid tiers", url:"https://www.heygen.com"},
+  {name:"Grok", cat:"Writing & Chat", desc:"xAI's assistant built into X, leaning into real-time information and a looser tone.", price:"Free / paid tiers", url:"https://x.ai/grok"},
+  {name:"DeepSeek", cat:"Writing & Chat", desc:"Open-weight chat and reasoning models known for strong performance at low cost.", price:"Free", url:"https://www.deepseek.com"},
+  {name:"Mistral Le Chat", cat:"Writing & Chat", desc:"Fast European assistant from Mistral AI, with a focus on coding and multilingual chat.", price:"Free / paid tiers", url:"https://chat.mistral.ai"},
+  {name:"You.com", cat:"Research", desc:"Search-first assistant that blends web results with chat-style answers and citations.", price:"Free / paid tiers", url:"https://you.com"},
+  {name:"Grammarly", cat:"Writing & Chat", desc:"Writing assistant that checks grammar, tone, and clarity across browsers and apps.", price:"Free / paid tiers", url:"https://www.grammarly.com"},
+  {name:"Jasper", cat:"Writing & Chat", desc:"Marketing-focused writing tool for generating on-brand copy at scale.", price:"From $39mo", url:"https://www.jasper.ai"},
+  {name:"Stable Diffusion", cat:"Image", desc:"Open-weight image generator that can run locally or through many hosted apps.", price:"Free (open weights)", url:"https://stability.ai"},
+  {name:"Krea", cat:"Image", desc:"Real-time image and video generation tool built for fast, iterative visual exploration.", price:"Free / paid tiers", url:"https://www.krea.ai"},
+  {name:"Recraft", cat:"Image", desc:"Image generator geared toward clean vector graphics, icons, and brand assets.", price:"Free / paid tiers", url:"https://www.recraft.ai"},
+  {name:"Luma Dream Machine", cat:"Video", desc:"Text- and image-to-video model known for smooth, realistic motion in short clips.", price:"Free / paid tiers", url:"https://lumalabs.ai/dream-machine"},
+  {name:"Kling AI", cat:"Video", desc:"Text-to-video generator producing longer, high-fidelity clips from prompts.", price:"Free / paid tiers", url:"https://klingai.com"},
+  {name:"Opus Clip", cat:"Video", desc:"Turns long-form video into short, ready-to-post clips picked out automatically.", price:"Free / paid tiers", url:"https://www.opus.pro"},
+  {name:"Windsurf", cat:"Code", desc:"AI-native code editor with an agent that edits multiple files toward a stated goal.", price:"Free / paid tiers", url:"https://windsurf.com"},
+  {name:"v0", cat:"Code", desc:"Generates working front-end UI components and pages from a text description.", price:"Free / paid tiers", url:"https://v0.dev"},
+  {name:"Bolt.new", cat:"Code", desc:"Builds and deploys full web apps in the browser from a single prompt.", price:"Free / paid tiers", url:"https://bolt.new"},
+  {name:"Lovable", cat:"Code", desc:"Prompt-to-app builder aimed at non-engineers shipping a working product fast.", price:"Free / paid tiers", url:"https://lovable.dev"},
+  {name:"Reflect", cat:"Productivity", desc:"Note-taking app with AI-assisted linking and daily-notes workflow.", price:"From $10mo", url:"https://reflect.app"},
+  {name:"Mem", cat:"Productivity", desc:"Self-organizing notes app that surfaces related notes automatically as you write.", price:"Free / paid tiers", url:"https://mem.ai"},
+  {name:"Tome", cat:"Design & Slides", desc:"Generates narrative slide decks and one-pagers from a short prompt.", price:"Free / paid tiers", url:"https://tome.app"},
+  {name:"Beautiful.ai", cat:"Design & Slides", desc:"Slide design tool that auto-adjusts layouts as you add or edit content.", price:"From $12mo", url:"https://www.beautiful.ai"},
+  {name:"AIVA", cat:"Audio", desc:"Composes original instrumental music in a chosen style or mood for creators.", price:"Free / paid tiers", url:"https://www.aiva.ai"},
+  {name:"Murf", cat:"Audio", desc:"Text-to-speech studio for voiceovers with a large library of AI voices.", price:"Free / paid tiers", url:"https://murf.ai"},
+  {name:"Semantic Scholar", cat:"Research", desc:"Academic search engine with AI-generated summaries of research papers.", price:"Free", url:"https://www.semanticscholar.org"},
+  {name:"Humata", cat:"Research", desc:"Lets you upload documents and ask questions answered with citations back to the text.", price:"Free / paid tiers", url:"https://www.humata.ai"}
+];
+
+const CAT_COLORS = {
+  "Writing & Chat":"#5B54D6",
+  "Research":"#0E8F82",
+  "Image":"#E85C42",
+  "Video":"#E8A73B",
+  "Audio":"#2F80ED",
+  "Code":"#2FA84F",
+  "Productivity":"#D6336C",
+  "Design & Slides":"#9D5CE0"
+};
+function colorFor(cat){ return CAT_COLORS[cat] || "#242640"; }
+
+const grid = document.getElementById('cardsGrid');
+const catListEl = document.getElementById('catList');
+const searchInput = document.getElementById('searchInput');
+const emptyMsg = document.getElementById('emptyMsg');
+const liveCount = document.getElementById('liveCount');
+
+const categories = ["All", ...Array.from(new Set(TOOLS.map(t=>t.cat))).sort()];
+let activeCat = "All";
+
+function countFor(cat){
+  return cat === "All" ? TOOLS.length : TOOLS.filter(t=>t.cat===cat).length;
+}
+
+function renderCatList(){
+  catListEl.innerHTML = categories.map(c =>
+    `<button class="cat-btn ${c===activeCat?'active':''}" data-cat="${c}">
+      <span class="cat-btn-label"><span class="cat-dot" style="background:${c==='All'?'#242640':colorFor(c)}"></span>${c}</span>
+      <small>${String(countFor(c)).padStart(2,'0')}</small>
+    </button>`
+  ).join('');
+  catListEl.querySelectorAll('.cat-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      activeCat = btn.getAttribute('data-cat');
+      renderCatList();
+      renderCards();
+    });
+  });
+}
+
+function renderCards(){
+  const q = searchInput.value.trim().toLowerCase();
+  let filtered = TOOLS.filter(t=>{
+    const matchesCat = activeCat === "All" || t.cat === activeCat;
+    const matchesQ = !q || t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q) || t.cat.toLowerCase().includes(q);
+    return matchesCat && matchesQ;
+  });
+
+  liveCount.textContent = filtered.length + " tool" + (filtered.length===1?"":"s") + " shelved";
+
+  if(filtered.length === 0){
+    grid.innerHTML = "";
+    emptyMsg.style.display = "block";
+    return;
+  }
+  emptyMsg.style.display = "none";
+
+  grid.innerHTML = filtered.map((t,i) => `
+    <div class="card" style="border-top-color:${colorFor(t.cat)}">
+      <div class="card-top">
+        <span class="card-num">No. ${String(i+1).padStart(3,'0')}</span>
+        <span class="card-cat" style="background:${colorFor(t.cat)}">${t.cat}</span>
+      </div>
+      <h3>${t.name}</h3>
+      <p>${t.desc}</p>
+      <div class="card-foot">
+        <span class="card-price">${t.price}</span>
+        <a class="card-link" href="${t.url}" target="_blank" rel="noopener sponsored">Visit ↗</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+searchInput.addEventListener('input', renderCards);
+
+renderCatList();
+renderCards();
+</script>
+
+</body>
+</html>
