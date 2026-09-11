@@ -1275,6 +1275,44 @@ searchInput.addEventListener('input', renderCards);
 renderCatList();
 renderCards();
 </script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/923164212309" target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-decoration: none;
+    font-size: 32px;
+">
+    💬
+</a>
 
+<!-- Contact Form Section -->
+<section id="contact" style="max-width: 500px; margin: 60px auto; padding: 30px; background: #f9f9f9; border-radius: 10px;">
+    <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+    <form action="https://formspree.io/f/xgaednly" method="POST">
+        <label style="display: block; margin-bottom: 5px;">Name</label>
+        <input type="text" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+        <label style="display: block; margin-bottom: 5px;">Email</label>
+        <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+        <label style="display: block; margin-bottom: 5px;">Message</label>
+        <textarea name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></textarea>
+
+        <button type="submit" style="width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+            Send Message
+        </button>
+    </form>
+</section>
 </body>
 </html>
