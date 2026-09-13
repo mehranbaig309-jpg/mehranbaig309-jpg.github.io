@@ -315,6 +315,25 @@
     padding:40px 0;
   }
 
+  /* ---------- Pagination ---------- */
+  .pagination{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 0 0;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .pagination a{
+    color:var(--indigo);
+    text-decoration:none;
+    border-bottom:1px solid var(--indigo);
+  }
+  .pagination a:hover{color:var(--coral); border-color:var(--coral);}
+  .pagination .pg-info{color:var(--ink-soft);}
+
   /* ---------- Ad slots (for AdSense later) ---------- */
   .ad-slot{
     grid-column:1/-1;
@@ -363,15 +382,16 @@
       </svg>
       <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
     </div>
-    <div class="drawer-tag" id="liveCount">61 tools shelved</div>
+    <div class="drawer-tag" id="liveCount">31 tools shelved</div>
     <a href="blog.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px; margin-left:8px;">Blog</a>
+    <a href="page2.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px; margin-left:8px;">Page 2 &#8594;</a>
   </div>
   <div class="hero">
     <h1>Every AI Tool,<br><em>in one place.</em></h1>
     <p>A hand-sorted catalog of the software actually worth your time this year — writing, images, video, code, and the rest. No noise, no rankings for sale.</p>
     <div class="hero-meta">
       <span><b>8</b>categories</span>
-      <span><b>61</b>tools indexed</span>
+      <span><b>31</b>tools indexed</span>
       <span><b>2026</b>last reshelved</span>
     </div>
     <div class="searchbar">
@@ -761,368 +781,11 @@
           <a class="card-link" href="https://www.synthesia.io" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
         </div>
       </div>
-      <div class="card" data-cat="Writing & Chat" data-name="character.ai" data-desc="platform for chatting with customizable ai personas built by its community." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 032</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Character.AI</h3>
-        <p>Platform for chatting with customizable AI personas built by its community.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://character.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="poe" data-desc="single subscription that gives access to many different chat models in one place." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 033</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Poe</h3>
-        <p>Single subscription that gives access to many different chat models in one place.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://poe.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="fireflies.ai" data-desc="meeting recorder and summarizer that syncs notes into your existing work tools." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 034</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Fireflies.ai</h3>
-        <p>Meeting recorder and summarizer that syncs notes into your existing work tools.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://fireflies.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="consensus" data-desc="search engine that answers questions using findings drawn from scientific papers." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 035</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>Consensus</h3>
-        <p>Search engine that answers questions using findings drawn from scientific papers.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://consensus.app" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="leonardo ai" data-desc="image generator geared toward game assets, concept art, and stylized graphics." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 036</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Leonardo AI</h3>
-        <p>Image generator geared toward game assets, concept art, and stylized graphics.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://leonardo.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="heygen" data-desc="creates talking-avatar videos with lip-synced translation into other languages." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 037</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>HeyGen</h3>
-        <p>Creates talking-avatar videos with lip-synced translation into other languages.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.heygen.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="grok" data-desc="xai's assistant built into x, leaning into real-time information and a looser tone." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 038</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Grok</h3>
-        <p>xAI's assistant built into X, leaning into real-time information and a looser tone.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://x.ai/grok" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="deepseek" data-desc="open-weight chat and reasoning models known for strong performance at low cost." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 039</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>DeepSeek</h3>
-        <p>Open-weight chat and reasoning models known for strong performance at low cost.</p>
-        <div class="card-foot">
-          <span class="card-price">Free</span>
-          <a class="card-link" href="https://www.deepseek.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="mistral le chat" data-desc="fast european assistant from mistral ai, with a focus on coding and multilingual chat." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 040</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Mistral Le Chat</h3>
-        <p>Fast European assistant from Mistral AI, with a focus on coding and multilingual chat.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://chat.mistral.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="you.com" data-desc="search-first assistant that blends web results with chat-style answers and citations." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 041</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>You.com</h3>
-        <p>Search-first assistant that blends web results with chat-style answers and citations.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://you.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="grammarly" data-desc="writing assistant that checks grammar, tone, and clarity across browsers and apps." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 042</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Grammarly</h3>
-        <p>Writing assistant that checks grammar, tone, and clarity across browsers and apps.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.grammarly.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="jasper" data-desc="marketing-focused writing tool for generating on-brand copy at scale." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 043</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Jasper</h3>
-        <p>Marketing-focused writing tool for generating on-brand copy at scale.</p>
-        <div class="card-foot">
-          <span class="card-price">From $39mo</span>
-          <a class="card-link" href="https://www.jasper.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="stable diffusion" data-desc="open-weight image generator that can run locally or through many hosted apps." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 044</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Stable Diffusion</h3>
-        <p>Open-weight image generator that can run locally or through many hosted apps.</p>
-        <div class="card-foot">
-          <span class="card-price">Free (open weights)</span>
-          <a class="card-link" href="https://stability.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="krea" data-desc="real-time image and video generation tool built for fast, iterative visual exploration." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 045</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Krea</h3>
-        <p>Real-time image and video generation tool built for fast, iterative visual exploration.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.krea.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="recraft" data-desc="image generator geared toward clean vector graphics, icons, and brand assets." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 046</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Recraft</h3>
-        <p>Image generator geared toward clean vector graphics, icons, and brand assets.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.recraft.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="luma dream machine" data-desc="text- and image-to-video model known for smooth, realistic motion in short clips." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 047</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Luma Dream Machine</h3>
-        <p>Text- and image-to-video model known for smooth, realistic motion in short clips.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://lumalabs.ai/dream-machine" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="kling ai" data-desc="text-to-video generator producing longer, high-fidelity clips from prompts." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 048</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Kling AI</h3>
-        <p>Text-to-video generator producing longer, high-fidelity clips from prompts.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://klingai.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="opus clip" data-desc="turns long-form video into short, ready-to-post clips picked out automatically." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 049</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Opus Clip</h3>
-        <p>Turns long-form video into short, ready-to-post clips picked out automatically.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.opus.pro" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="windsurf" data-desc="ai-native code editor with an agent that edits multiple files toward a stated goal." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 050</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Windsurf</h3>
-        <p>AI-native code editor with an agent that edits multiple files toward a stated goal.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://windsurf.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="v0" data-desc="generates working front-end ui components and pages from a text description." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 051</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>v0</h3>
-        <p>Generates working front-end UI components and pages from a text description.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://v0.dev" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="bolt.new" data-desc="builds and deploys full web apps in the browser from a single prompt." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 052</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Bolt.new</h3>
-        <p>Builds and deploys full web apps in the browser from a single prompt.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://bolt.new" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="lovable" data-desc="prompt-to-app builder aimed at non-engineers shipping a working product fast." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 053</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Lovable</h3>
-        <p>Prompt-to-app builder aimed at non-engineers shipping a working product fast.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://lovable.dev" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="reflect" data-desc="note-taking app with ai-assisted linking and daily-notes workflow." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 054</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Reflect</h3>
-        <p>Note-taking app with AI-assisted linking and daily-notes workflow.</p>
-        <div class="card-foot">
-          <span class="card-price">From $10mo</span>
-          <a class="card-link" href="https://reflect.app" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="mem" data-desc="self-organizing notes app that surfaces related notes automatically as you write." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 055</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Mem</h3>
-        <p>Self-organizing notes app that surfaces related notes automatically as you write.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://mem.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="tome" data-desc="generates narrative slide decks and one-pagers from a short prompt." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 056</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Tome</h3>
-        <p>Generates narrative slide decks and one-pagers from a short prompt.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://tome.app" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="beautiful.ai" data-desc="slide design tool that auto-adjusts layouts as you add or edit content." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 057</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Beautiful.ai</h3>
-        <p>Slide design tool that auto-adjusts layouts as you add or edit content.</p>
-        <div class="card-foot">
-          <span class="card-price">From $12mo</span>
-          <a class="card-link" href="https://www.beautiful.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="aiva" data-desc="composes original instrumental music in a chosen style or mood for creators." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 058</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>AIVA</h3>
-        <p>Composes original instrumental music in a chosen style or mood for creators.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.aiva.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="murf" data-desc="text-to-speech studio for voiceovers with a large library of ai voices." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 059</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>Murf</h3>
-        <p>Text-to-speech studio for voiceovers with a large library of AI voices.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://murf.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="semantic scholar" data-desc="academic search engine with ai-generated summaries of research papers." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 060</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>Semantic Scholar</h3>
-        <p>Academic search engine with AI-generated summaries of research papers.</p>
-        <div class="card-foot">
-          <span class="card-price">Free</span>
-          <a class="card-link" href="https://www.semanticscholar.org" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="humata" data-desc="lets you upload documents and ask questions answered with citations back to the text." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 061</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>Humata</h3>
-        <p>Lets you upload documents and ask questions answered with citations back to the text.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.humata.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
     </div>
     <p class="empty-msg" id="emptyMsg" style="display:none;">No cards match that search — try a broader term.</p>
+    <div class="pagination">
+      <span class="pg-info">Showing tools No. 001–031</span><a href="page2.html">Next: tools 032–061 &#8594;</a>
+    </div>
   </div>
 </div>
 
@@ -1133,6 +796,7 @@
 </footer>
 
 <script>
+const NUM_OFFSET = 0;
 const TOOLS = [
   {name:"ChatGPT", cat:"Writing & Chat", desc:"General-purpose chat assistant for drafting, brainstorming, and answering questions across almost any subject.", price:"Free / from $20mo", url:"https://chat.openai.com"},
   {name:"Claude", cat:"Writing & Chat", desc:"Conversational assistant known for long-context reasoning, careful writing, and document analysis.", price:"Free / from $20mo", url:"https://claude.ai"},
@@ -1164,37 +828,7 @@ const TOOLS = [
   {name:"Canva Magic Studio", cat:"Design & Slides", desc:"Suite of AI design tools inside Canva — backgrounds, text-to-image, resizing.", price:"Free / paid tiers", url:"https://www.canva.com/magic-studio"},
   {name:"Framer AI", cat:"Design & Slides", desc:"Generates and edits full marketing websites from a prompt, ready to publish.", price:"Free / paid tiers", url:"https://www.framer.com/ai"},
   {name:"Galileo AI", cat:"Design & Slides", desc:"Turns short text prompts into editable UI screen designs for product teams.", price:"Paid", url:"https://www.usegalileo.ai"},
-  {name:"Synthesia", cat:"Video", desc:"Generates presenter-style videos from text using AI avatars, no camera needed.", price:"From $18mo", url:"https://www.synthesia.io"},
-  {name:"Character.AI", cat:"Writing & Chat", desc:"Platform for chatting with customizable AI personas built by its community.", price:"Free / paid tiers", url:"https://character.ai"},
-  {name:"Poe", cat:"Writing & Chat", desc:"Single subscription that gives access to many different chat models in one place.", price:"Free / paid tiers", url:"https://poe.com"},
-  {name:"Fireflies.ai", cat:"Productivity", desc:"Meeting recorder and summarizer that syncs notes into your existing work tools.", price:"Free / paid tiers", url:"https://fireflies.ai"},
-  {name:"Consensus", cat:"Research", desc:"Search engine that answers questions using findings drawn from scientific papers.", price:"Free / paid tiers", url:"https://consensus.app"},
-  {name:"Leonardo AI", cat:"Image", desc:"Image generator geared toward game assets, concept art, and stylized graphics.", price:"Free / paid tiers", url:"https://leonardo.ai"},
-  {name:"HeyGen", cat:"Video", desc:"Creates talking-avatar videos with lip-synced translation into other languages.", price:"Free / paid tiers", url:"https://www.heygen.com"},
-  {name:"Grok", cat:"Writing & Chat", desc:"xAI's assistant built into X, leaning into real-time information and a looser tone.", price:"Free / paid tiers", url:"https://x.ai/grok"},
-  {name:"DeepSeek", cat:"Writing & Chat", desc:"Open-weight chat and reasoning models known for strong performance at low cost.", price:"Free", url:"https://www.deepseek.com"},
-  {name:"Mistral Le Chat", cat:"Writing & Chat", desc:"Fast European assistant from Mistral AI, with a focus on coding and multilingual chat.", price:"Free / paid tiers", url:"https://chat.mistral.ai"},
-  {name:"You.com", cat:"Research", desc:"Search-first assistant that blends web results with chat-style answers and citations.", price:"Free / paid tiers", url:"https://you.com"},
-  {name:"Grammarly", cat:"Writing & Chat", desc:"Writing assistant that checks grammar, tone, and clarity across browsers and apps.", price:"Free / paid tiers", url:"https://www.grammarly.com"},
-  {name:"Jasper", cat:"Writing & Chat", desc:"Marketing-focused writing tool for generating on-brand copy at scale.", price:"From $39mo", url:"https://www.jasper.ai"},
-  {name:"Stable Diffusion", cat:"Image", desc:"Open-weight image generator that can run locally or through many hosted apps.", price:"Free (open weights)", url:"https://stability.ai"},
-  {name:"Krea", cat:"Image", desc:"Real-time image and video generation tool built for fast, iterative visual exploration.", price:"Free / paid tiers", url:"https://www.krea.ai"},
-  {name:"Recraft", cat:"Image", desc:"Image generator geared toward clean vector graphics, icons, and brand assets.", price:"Free / paid tiers", url:"https://www.recraft.ai"},
-  {name:"Luma Dream Machine", cat:"Video", desc:"Text- and image-to-video model known for smooth, realistic motion in short clips.", price:"Free / paid tiers", url:"https://lumalabs.ai/dream-machine"},
-  {name:"Kling AI", cat:"Video", desc:"Text-to-video generator producing longer, high-fidelity clips from prompts.", price:"Free / paid tiers", url:"https://klingai.com"},
-  {name:"Opus Clip", cat:"Video", desc:"Turns long-form video into short, ready-to-post clips picked out automatically.", price:"Free / paid tiers", url:"https://www.opus.pro"},
-  {name:"Windsurf", cat:"Code", desc:"AI-native code editor with an agent that edits multiple files toward a stated goal.", price:"Free / paid tiers", url:"https://windsurf.com"},
-  {name:"v0", cat:"Code", desc:"Generates working front-end UI components and pages from a text description.", price:"Free / paid tiers", url:"https://v0.dev"},
-  {name:"Bolt.new", cat:"Code", desc:"Builds and deploys full web apps in the browser from a single prompt.", price:"Free / paid tiers", url:"https://bolt.new"},
-  {name:"Lovable", cat:"Code", desc:"Prompt-to-app builder aimed at non-engineers shipping a working product fast.", price:"Free / paid tiers", url:"https://lovable.dev"},
-  {name:"Reflect", cat:"Productivity", desc:"Note-taking app with AI-assisted linking and daily-notes workflow.", price:"From $10mo", url:"https://reflect.app"},
-  {name:"Mem", cat:"Productivity", desc:"Self-organizing notes app that surfaces related notes automatically as you write.", price:"Free / paid tiers", url:"https://mem.ai"},
-  {name:"Tome", cat:"Design & Slides", desc:"Generates narrative slide decks and one-pagers from a short prompt.", price:"Free / paid tiers", url:"https://tome.app"},
-  {name:"Beautiful.ai", cat:"Design & Slides", desc:"Slide design tool that auto-adjusts layouts as you add or edit content.", price:"From $12mo", url:"https://www.beautiful.ai"},
-  {name:"AIVA", cat:"Audio", desc:"Composes original instrumental music in a chosen style or mood for creators.", price:"Free / paid tiers", url:"https://www.aiva.ai"},
-  {name:"Murf", cat:"Audio", desc:"Text-to-speech studio for voiceovers with a large library of AI voices.", price:"Free / paid tiers", url:"https://murf.ai"},
-  {name:"Semantic Scholar", cat:"Research", desc:"Academic search engine with AI-generated summaries of research papers.", price:"Free", url:"https://www.semanticscholar.org"},
-  {name:"Humata", cat:"Research", desc:"Lets you upload documents and ask questions answered with citations back to the text.", price:"Free / paid tiers", url:"https://www.humata.ai"}
+  {name:"Synthesia", cat:"Video", desc:"Generates presenter-style videos from text using AI avatars, no camera needed.", price:"From $18mo", url:"https://www.synthesia.io"}
 ];
 
 const CAT_COLORS = {
@@ -1258,7 +892,7 @@ function renderCards(){
   grid.innerHTML = filtered.map((t,i) => `
     <div class="card" style="border-top-color:${colorFor(t.cat)}">
       <div class="card-top">
-        <span class="card-num">No. ${String(i+1).padStart(3,'0')}</span>
+        <span class="card-num">No. ${String(i+1+NUM_OFFSET).padStart(3,'0')}</span>
         <span class="card-cat" style="background:${colorFor(t.cat)}">${t.cat}</span>
       </div>
       <h3>${t.name}</h3>
