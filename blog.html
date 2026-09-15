@@ -2,62 +2,142 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PCKZWW5TZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1PCKZWW5TZ');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to AI Stackroom — Blog</title>
-<meta name="description" content="An introduction to AI Stackroom, a hand-sorted directory of 60+ AI tools across writing, image, video, audio, code, and more.">
+<title>ChatGPT vs Claude vs Gemini: Which AI Chat Assistant Should You Use in 2026? — AI Stackroom Blog</title>
+<meta name="description" content="A plain-language comparison of ChatGPT, Claude, and Gemini — what each one is actually good at, and how to pick the right one for writing, coding, or research.">
+<meta name="keywords" content="ChatGPT vs Claude, ChatGPT vs Gemini, best AI chat assistant 2026, Claude vs Gemini, which AI chatbot to use">
+<meta name="author" content="AI Stackroom">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://mehranbaig309-jpg.github.io/blog.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT vs Claude vs Gemini: Which AI Chat Assistant Should You Use in 2026?">
+<meta property="og:description" content="A plain-language comparison of ChatGPT, Claude, and Gemini — what each one is actually good at.">
+<meta property="og:url" content="https://mehranbaig309-jpg.github.io/blog.html">
+<meta property="og:site_name" content="AI Stackroom">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT vs Claude vs Gemini: Which AI Chat Assistant Should You Use in 2026?">
+<meta name="twitter:description" content="A plain-language comparison of ChatGPT, Claude, and Gemini — what each one is actually good at.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ChatGPT vs Claude vs Gemini: Which AI Chat Assistant Should You Use in 2026?",
+  "description": "A plain-language comparison of ChatGPT, Claude, and Gemini — what each one is actually good at, and how to pick the right one.",
+  "author": {"@type": "Organization", "name": "AI Stackroom"},
+  "publisher": {"@type": "Organization", "name": "AI Stackroom"},
+  "datePublished": "2026-09-13",
+  "mainEntityOfPage": "https://mehranbaig309-jpg.github.io/blog.html"
+}
+</script>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect x='1' y='1' width='28' height='28' fill='%23FBF5EA' stroke='%23242640' stroke-width='1.4'/%3E%3Crect x='5' y='6' width='20' height='3.4' fill='%235B54D6'/%3E%3Crect x='5' y='13.3' width='20' height='3.4' fill='%23E85C42'/%3E%3Crect x='5' y='20.6' width='12' height='3.4' fill='%23E8A73B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.7;
-    color: #222;
-    background: #fff;
+  :root{
+    --paper:#FBF5EA;
+    --paper-card:#FFFFFF;
+    --ink:#242640;
+    --ink-soft:#615E78;
+    --line:#E7DCC6;
+    --rule:#D9CDAF;
+    --coral:#E85C42;
+    --indigo:#5B54D6;
   }
-  a { color: #007bff; }
-  h1 { font-size: 2rem; margin-bottom: 5px; }
-  .meta { color: #777; font-size: 0.9rem; margin-bottom: 30px; }
-  h2 { margin-top: 40px; }
-  .back-link { display: inline-block; margin-bottom: 30px; text-decoration: none; }
-  .cta {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 40px;
-    text-align: center;
-  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  header{padding:28px 6vw 0; border-bottom:1px solid var(--rule);}
+  .brandrow{display:flex; justify-content:space-between; align-items:baseline; padding-bottom:18px; flex-wrap:wrap; gap:10px;}
+  .logo-wrap{display:flex; align-items:center; gap:10px;}
+  .brand{font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.02em; color:var(--ink-soft);}
+  .brand b{color:var(--ink);}
+  .navlinks{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+  .navlinks a{font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px;}
+  .navlinks a.active{background:#5B54D6; color:#fff;}
+  .navlinks a:hover{color:var(--coral); border-color:var(--coral);}
+
+  main{max-width:760px; margin:0 auto; padding:48px 6vw 80px;}
+  .post-meta{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); margin-bottom:14px;}
+  h1{font-family:'Fraunces',serif; font-weight:500; font-size:clamp(30px,5vw,52px); line-height:1.06; margin:0 0 24px;}
+  .lede{font-size:18px; line-height:1.6; color:var(--ink-soft); margin:0 0 36px;}
+  article h2{font-family:'Fraunces',serif; font-weight:500; font-size:26px; margin:40px 0 14px;}
+  article p{font-size:16px; line-height:1.7; color:var(--ink); margin:0 0 18px;}
+  article ul{margin:0 0 18px; padding-left:22px;}
+  article li{font-size:16px; line-height:1.7; margin-bottom:8px;}
+  .callout{background:var(--paper-card); border-left:4px solid var(--indigo); padding:16px 20px; margin:28px 0; font-size:15px; line-height:1.6; color:var(--ink-soft);}
+  .backlink{display:inline-block; margin-top:40px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);}
+  .backlink:hover{color:var(--coral); border-color:var(--coral);}
+  footer{border-top:1px solid var(--rule); padding:30px 6vw 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
+  :focus-visible{outline:2px solid var(--indigo); outline-offset:2px;}
 </style>
 </head>
 <body>
 
-<a href="index.html" class="back-link">← Back to AI Stackroom</a>
+<header>
+  <div class="brandrow">
+    <div class="logo-wrap">
+      <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
+        <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
+        <rect x="5" y="13.3" width="20" height="3.4" fill="#E85C42"/>
+        <rect x="5" y="20.6" width="12" height="3.4" fill="#E8A73B"/>
+      </svg>
+      <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
+    </div>
+    <div class="navlinks">
+      <a class="active" href="blog.html">Blog</a>
+      <a href="index.html">Page 1</a>
+      <a href="page2.html">Page 2</a>
+      <a href="page3.html">Page 3</a>
+    </div>
+  </div>
+</header>
 
-<h1>Welcome to AI Stackroom: A Directory Built the Old-Fashioned Way</h1>
-<p class="meta">Published 2026 · AI Stackroom</p>
+<main>
+  <div class="post-meta">September 13, 2026 · AI Stackroom</div>
+  <h1>ChatGPT vs Claude vs Gemini: Which One Should You Actually Use?</h1>
+  <p class="lede">All three show up at the top of every "best AI tools" list, and all three can write an email or explain a concept. The real differences show up once you look at what each one is actually built for.</p>
 
-<p>Every week brings another AI tool promising to change how you work. Most directories try to keep up by listing everything — paid placements, affiliate links, and rankings that shift depending on who's paying. AI Stackroom takes a different approach.</p>
+  <article>
+    <p>If you've only got time to pick one assistant, the honest answer is: it depends on what you're doing most often. Here's a plain breakdown of where each one tends to pull ahead.</p>
 
-<h2>What is AI Stackroom?</h2>
-<p>AI Stackroom is a hand-sorted catalog of AI tools that are actually worth your time. Right now, the shelves hold <strong>61 tools across 8 categories</strong>: writing, image, video, audio, code, productivity, research, and design. No noise, no pay-to-rank listings — just tools that earned their spot.</p>
+    <h2>ChatGPT — the generalist</h2>
+    <p>ChatGPT is the one most people have already tried, and for good reason — it's a strong all-rounder for brainstorming, drafting, and quick research. It also has the widest plugin and image-generation ecosystem (DALL·E 3 is built right in), so if you want one app that does a bit of everything, this is usually the safest starting point.</p>
 
-<h2>Why "hand-sorted" matters</h2>
-<p>Most AI directories are auto-generated lists scraped from press releases. AI Stackroom is different — every tool is reviewed and placed into a category by hand, so what you see is a curated shelf, not a dumping ground.</p>
+    <h2>Claude — the careful writer</h2>
+    <p>Claude tends to stand out on longer, more careful writing and on working through big documents — contracts, reports, long PDFs — without losing track of the details. If your day-to-day involves editing, summarizing, or reasoning through something dense, it's worth having in the rotation alongside ChatGPT.</p>
 
-<h2>How to use it</h2>
-<p>Head to the <a href="index.html">homepage</a> and use the filter to browse by category, or search directly for a tool you've heard about. Each listing gives you a quick description and a direct link — no extra steps, no sign-ups required to browse.</p>
+    <h2>Gemini — the one already in your Google tab</h2>
+    <p>Gemini's biggest advantage isn't necessarily raw capability — it's that it's already sitting inside Gmail, Docs, and Search. If most of your work already happens in Google's apps, Gemini removes a lot of the copy-paste friction the other two still require.</p>
 
-<h2>What's next</h2>
-<p>New tools get added as they prove themselves, and this blog will cover focused round-ups — like the best AI writing tools, or free alternatives to popular paid tools — to help you find what fits your workflow faster.</p>
-<h2>Tool Guides</h2>
-<ul>
-  <li>ChatGPT: <a href="blog-chatgpt-en.html">English</a> | <a href="blog-chatgpt.html">Urdu</a></li>
-</ul>
-<div class="cta">
-  <p>Have a tool you think belongs on the shelf, or feedback on the site?</p>
-  <p>Reach out at <a href="mailto:mehranbaig309@gmail.com">mehranbaig309@gmail.com</a> or use the contact form on the homepage.</p>
-</div>
+    <div class="callout">Quick way to decide: general everyday use → ChatGPT. Long documents and careful editing → Claude. Already living inside Google Workspace → Gemini. Plenty of people just run two of the three side by side.</div>
+
+    <h2>You don't have to pick just one</h2>
+    <p>Most free tiers are generous enough that trying two assistants for a week costs nothing but a bit of tab-switching. The fastest way to find out which one fits your workflow is to run the same real task — a draft email, a summary, a piece of code — through each and see which output you'd actually ship without editing.</p>
+    <p>All three, along with the rest of the tools we track, are listed on the <a href="index.html" style="color:var(--indigo); border-bottom:1px solid var(--indigo); text-decoration:none;">AI Stackroom catalog</a>.</p>
+  </article>
+
+  <a class="backlink" href="index.html">&larr; Back to the full catalog</a>
+</main>
+
+<footer>
+  <span>AI STACKROOM · a directory, updated by hand</span>
+  <span>Contact: <a href="mailto:mehranbaig309@gmail.com" style="color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);">mehranbaig309@gmail.com</a></span>
+  <span>Listings are editorial, not paid placement</span>
+</footer>
 
 </body>
 </html>
