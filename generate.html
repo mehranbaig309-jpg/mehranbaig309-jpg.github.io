@@ -50,6 +50,7 @@
   .navlinks{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
   .navlinks a{font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px;}
   .navlinks a:hover{color:var(--coral); border-color:var(--coral);}
+  .bottom-nav{padding:36px 6vw 0; display:flex; justify-content:center;}
 
   .hero{padding:44px 0 0; max-width:720px;}
   .hero .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--indigo); margin-bottom:14px;}
@@ -107,7 +108,7 @@
 
 <header>
   <div class="brandrow">
-    <div class="logo-wrap">
+    <a href="index.html" style="text-decoration:none; color:inherit; cursor:pointer;"><div class="logo-wrap">
       <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
         <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
@@ -115,12 +116,12 @@
         <rect x="5" y="20.6" width="12" height="3.4" fill="#E8A73B"/>
       </svg>
       <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
-    </div>
+    </div></a>
     <div class="navlinks">
+      <a href="blog.html">Blog</a>
       <a href="index.html">Page 1</a>
       <a href="page2.html">Page 2</a>
       <a href="page3.html">Page 3</a>
-      <a href="blog.html">Blog</a>
     </div>
   </div>
   <div class="hero">
@@ -163,6 +164,15 @@
 
   <p class="credit-note">Powered by the open <a href="https://pollinations.ai" target="_blank" rel="noopener">Pollinations.ai</a> image API. Images are AI-generated — review before commercial use.</p>
 </main>
+
+<div class="bottom-nav">
+  <div class="navlinks">
+    <a href="blog.html">Blog</a>
+    <a href="index.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+  </div>
+</div>
 
 <footer>
   <span>AI STACKROOM · a directory, updated by hand</span>
