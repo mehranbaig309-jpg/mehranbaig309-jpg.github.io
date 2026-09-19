@@ -68,6 +68,7 @@
   .navlinks a{font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px;}
   .navlinks a.active{background:#5B54D6; color:#fff;}
   .navlinks a:hover{color:var(--coral); border-color:var(--coral);}
+  .bottom-nav{padding:36px 6vw 0; display:flex; justify-content:center;}
 
   main{max-width:760px; margin:0 auto; padding:48px 6vw 80px;}
   .post-meta{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); margin-bottom:14px;}
@@ -88,7 +89,7 @@
 
 <header>
   <div class="brandrow">
-    <div class="logo-wrap">
+    <a href="index.html" style="text-decoration:none; color:inherit; cursor:pointer;"><div class="logo-wrap">
       <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
         <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
@@ -96,7 +97,7 @@
         <rect x="5" y="20.6" width="12" height="3.4" fill="#E8A73B"/>
       </svg>
       <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
-    </div>
+    </div></a>
     <div class="navlinks">
       <a class="active" href="blog.html">Blog</a>
       <a href="index.html">Page 1</a>
@@ -139,6 +140,15 @@
 
   <a class="backlink" href="index.html">&larr; Back to the full catalog</a>
 </main>
+
+<div class="bottom-nav">
+  <div class="navlinks">
+    <a class="active" href="blog.html">Blog</a>
+    <a href="index.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+  </div>
+</div>
 
 <footer>
   <span>AI STACKROOM · a directory, updated by hand</span>
