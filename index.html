@@ -96,6 +96,12 @@
     color:var(--ink-soft);
   }
   .brand b{color:var(--ink);}
+  .navlinks{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+  .navlinks a{font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px;}
+  .navlinks a.active{background:#5B54D6; color:#fff;}
+  .navlinks a:hover{color:var(--coral); border-color:var(--coral);}
+  .navgroup{display:flex; gap:14px; align-items:center; flex-wrap:wrap;}
+  .bottom-nav{padding:36px 6vw 0; display:flex; justify-content:center;}
   .drawer-tag{
     font-family:'IBM Plex Mono',monospace;
     font-size:12px;
@@ -373,7 +379,7 @@
 
 <header>
   <div class="brandrow">
-    <div class="logo-wrap">
+    <a href="index.html" style="text-decoration:none; color:inherit; cursor:pointer;"><div class="logo-wrap">
       <svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
         <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
@@ -381,11 +387,16 @@
         <rect x="5" y="20.6" width="12" height="3.4" fill="#E8A73B"/>
       </svg>
       <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
+    </div></a>
+    <div class="navgroup">
+      <div class="drawer-tag" id="liveCount">31 tools shelved</div>
+      <div class="navlinks">
+        <a href="blog.html">Blog</a>
+        <a class="active" href="index.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+      </div>
     </div>
-    <div class="drawer-tag" id="liveCount">31 tools shelved</div>
-    <a href="blog.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px; margin-left:8px;">Blog</a>
-    <a href="page2.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px; margin-left:8px;">Page 2 &#8594;</a>
-    <a href="page3.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5B54D6; text-decoration:none; border:1px solid #5B54D6; padding:4px 10px; border-radius:2px; margin-left:8px;">Page 3</a>
   </div>
   <div class="hero">
     <h1>Every AI Tool,<br><em>in one place.</em></h1>
@@ -787,6 +798,15 @@
     <div class="pagination">
       <span class="pg-info">Showing tools No. 001–031</span><a href="page2.html">Next: tools 032–061 &#8594;</a>
     </div>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <div class="navlinks">
+    <a href="blog.html">Blog</a>
+    <a class="active" href="index.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
   </div>
 </div>
 
