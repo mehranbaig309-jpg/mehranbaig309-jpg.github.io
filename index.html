@@ -41,6 +41,21 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mehranbaig309-jpg.github.io/"
+    }
+  ]
+}
+</script>
+
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect x='1' y='1' width='28' height='28' fill='%23FBF5EA' stroke='%23242640' stroke-width='1.4'/%3E%3Crect x='5' y='6' width='20' height='3.4' fill='%235B54D6'/%3E%3Crect x='5' y='13.3' width='20' height='3.4' fill='%23E85C42'/%3E%3Crect x='5' y='20.6' width='12' height='3.4' fill='%23E8A73B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -854,6 +869,34 @@ const TOOLS = [
   {name:"Galileo AI", cat:"Design & Slides", desc:"Turns short text prompts into editable UI screen designs for product teams.", price:"Paid", url:"https://www.usegalileo.ai"},
   {name:"Synthesia", cat:"Video", desc:"Generates presenter-style videos from text using AI avatars, no camera needed.", price:"From $18mo", url:"https://www.synthesia.io"}
 ];
+
+// --- SEO: Dynamic ItemList schema, auto-generated from TOOLS array ---
+(function(){
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": TOOLS.map((t, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": t.name,
+        "description": t.desc,
+        "applicationCategory": t.cat,
+        "url": t.url,
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "description": t.price
+        }
+      }
+    }))
+  };
+  const schemaScript = document.createElement('script');
+  schemaScript.type = 'application/ld+json';
+  schemaScript.textContent = JSON.stringify(itemListSchema);
+  document.head.appendChild(schemaScript);
+})();
 
 const CAT_COLORS = {
   "Writing & Chat":"#5B54D6",
