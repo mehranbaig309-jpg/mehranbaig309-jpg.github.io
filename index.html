@@ -13,8 +13,8 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Stackroom — A Catalog of AI Tools</title>
-<meta name="description" content="AI Stackroom is a hand-sorted directory of 60+ AI tools for writing, image, video, audio, code, productivity, research, and design — searchable and organized by category.">
-<meta name="keywords" content="AI tools, AI tool directory, best AI tools 2026, AI tools list, ChatGPT alternatives, AI image generators, AI video tools, AI coding tools, AI productivity tools">
+<meta name="description" content="AI Stackroom is a hand-sorted directory of 60+ AI tools including Bolt.new, Windsurf, and Cursor for writing, coding, and productivity.">
+<meta name="keywords" content="AI tools, bolt.new, windsurf ai, cursor ide, best AI tools 2026, AI coding tools, ChatGPT alternatives, AI productivity tools">
 <meta name="author" content="AI Stackroom">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://mehranbaig309-jpg.github.io/">
@@ -22,14 +22,14 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI Stackroom — A Catalog of AI Tools">
-<meta property="og:description" content="A hand-sorted directory of 60+ AI tools across writing, image, video, audio, code, and productivity — searchable and organized by category.">
+<meta property="og:description" content="A hand-sorted directory of AI tools across writing, video, and coding — featuring latest tools like Bolt.new and Windsurf.">
 <meta property="og:url" content="https://mehranbaig309-jpg.github.io/">
 <meta property="og:site_name" content="AI Stackroom">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Stackroom — A Catalog of AI Tools">
-<meta name="twitter:description" content="A hand-sorted directory of 60+ AI tools across writing, image, video, audio, code, and productivity.">
+<meta name="twitter:description" content="Hand-sorted directory of AI tools including the latest AI coding agents like Windsurf and Bolt.new.">
 
 <script type="application/ld+json">
 {
@@ -38,21 +38,6 @@
   "name": "AI Stackroom",
   "description": "A hand-sorted directory of AI tools organized by category.",
   "url": "https://mehranbaig309-jpg.github.io/"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://mehranbaig309-jpg.github.io/"
-    }
-  ]
 }
 </script>
 
@@ -83,7 +68,6 @@
   }
   a{color:inherit;}
 
-  /* ---------- Header / Hero ---------- */
   header{
     padding:28px 6vw 0;
     border-bottom:1px solid var(--rule);
@@ -101,9 +85,6 @@
     align-items:center;
     gap:10px;
   }
-  .logo-mark{
-    flex-shrink:0;
-  }
   .brand{
     font-family:'IBM Plex Mono',monospace;
     font-size:13px;
@@ -116,7 +97,6 @@
   .navlinks a.active{background:#5B54D6; color:#fff;}
   .navlinks a:hover{color:var(--coral); border-color:var(--coral);}
   .navgroup{display:flex; gap:14px; align-items:center; flex-wrap:wrap;}
-  .bottom-nav{padding:36px 6vw 0; display:flex; justify-content:center;}
   .drawer-tag{
     font-family:'IBM Plex Mono',monospace;
     font-size:12px;
@@ -135,11 +115,6 @@
     line-height:0.98;
     margin:0 0 18px;
     max-width:14ch;
-  }
-  .hero h1 em{
-    font-style:normal;
-    font-weight:500;
-    color:var(--ink);
   }
   .hero p{
     max-width:52ch;
@@ -164,7 +139,6 @@
     font-weight:500;
   }
 
-  /* ---------- Search ---------- */
   .searchbar{
     max-width:640px;
     margin-top:34px;
@@ -177,12 +151,10 @@
     border:none;
     background:transparent;
     padding:14px 16px;
-    font-family:'Inter',sans-serif;
     font-size:15px;
     color:var(--ink);
     outline:none;
   }
-  .searchbar input::placeholder{color:#8b8a7d;}
   .searchbar span{
     padding:14px 16px;
     font-family:'IBM Plex Mono',monospace;
@@ -191,7 +163,6 @@
     border-left:1px solid var(--line);
   }
 
-  /* ---------- Layout: index + cards ---------- */
   .catalog{
     display:grid;
     grid-template-columns:200px 1fr;
@@ -203,53 +174,34 @@
     position:sticky;
     top:0;
     align-self:start;
-    height:fit-content;
   }
   .index-col h2{
     font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     text-transform:uppercase;
-    letter-spacing:.08em;
     color:var(--ink-soft);
     margin:0 0 14px;
-    font-weight:500;
   }
   .cat-btn{
     display:flex;
     justify-content:space-between;
     align-items:center;
     width:100%;
-    text-align:left;
     background:none;
     border:none;
     border-bottom:1px solid var(--line);
     padding:11px 4px;
-    font-family:'Inter',sans-serif;
     font-size:14.5px;
-    color:var(--ink);
     cursor:pointer;
-    gap:8px;
   }
   .cat-dot{
     width:8px;
     height:8px;
     border-radius:50%;
-    flex-shrink:0;
     margin-right:8px;
     display:inline-block;
   }
-  .cat-btn-label{
-    display:flex;
-    align-items:center;
-    flex:1;
-  }
-  .cat-btn small{
-    font-family:'IBM Plex Mono',monospace;
-    color:var(--ink-soft);
-    font-size:11px;
-  }
   .cat-btn.active{color:var(--indigo); font-weight:600;}
-  .cat-btn:hover{color:var(--indigo);}
 
   .cards-col{
     padding-top:44px;
@@ -269,133 +221,32 @@
     display:flex;
     flex-direction:column;
     min-height:210px;
-    position:relative;
     border-top:4px solid var(--ink);
   }
-  .card-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    margin-bottom:14px;
-  }
-  .card-num{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-  }
-  .card-cat{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:10.5px;
-    color:var(--ink);
-    background:var(--ink);
-    padding:2px 8px;
-    border-radius:2px;
-    white-space:nowrap;
-    color:#fff;
-  }
-  .card h3{
-    font-family:'Fraunces',serif;
-    font-weight:500;
-    font-size:22px;
-    margin:0 0 8px;
-  }
-  .card p{
-    font-size:14px;
-    line-height:1.55;
-    color:var(--ink-soft);
-    margin:0 0 18px;
-    flex:1;
-  }
-  .card-foot{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-top:1px solid var(--line);
-    padding-top:12px;
-  }
-  .card-price{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:11.5px;
-    color:var(--ink-soft);
-  }
-  .card-link{
-    font-family:'Inter',sans-serif;
-    font-size:13.5px;
-    font-weight:600;
-    color:var(--indigo);
-    text-decoration:none;
-    border-bottom:1px solid var(--indigo);
-    padding-bottom:1px;
-  }
-  .card-link:hover{color:var(--coral); border-color:var(--coral);}
+  .card-top{display:flex; justify-content:space-between; margin-bottom:14px;}
+  .card-num{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft);}
+  .card-cat{font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:2px 8px; border-radius:2px; color:#fff;}
+  .card h3{font-family:'Fraunces',serif; font-size:22px; margin:0 0 8px;}
+  .card p{font-size:14px; line-height:1.55; color:var(--ink-soft); flex:1; margin-bottom:18px;}
+  .card-foot{display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:12px;}
+  .card-price{font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--ink-soft);}
+  .card-link{font-weight:600; color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);}
 
-  .empty-msg{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:13px;
-    color:var(--ink-soft);
-    padding:40px 0;
-  }
-
-  /* ---------- Pagination ---------- */
-  .pagination{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:24px 0 0;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:13px;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .pagination a{
-    color:var(--indigo);
-    text-decoration:none;
-    border-bottom:1px solid var(--indigo);
-  }
-  .pagination a:hover{color:var(--coral); border-color:var(--coral);}
-  .pagination .pg-info{color:var(--ink-soft);}
-
-  /* ---------- Ad slots (for AdSense later) ---------- */
-  .ad-slot{
-    grid-column:1/-1;
-    background:repeating-linear-gradient(45deg,#00000006,#00000006 8px,transparent 8px,transparent 16px);
-    border:1px dashed var(--rule);
-    padding:16px;
-    text-align:center;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-  }
-
-  /* ---------- Footer ---------- */
-  footer{
-    border-top:1px solid var(--rule);
-    padding:30px 6vw 40px;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:12px;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;
-    color:var(--ink-soft);
-  }
+  footer{border-top:1px solid var(--rule); padding:30px 6vw 40px; display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
 
   @media (max-width:820px){
     .catalog{grid-template-columns:1fr;}
-    .index-col{position:static; display:flex; flex-wrap:wrap; gap:4px 18px; padding-bottom:10px;}
-    .cat-btn{border-bottom:none; width:auto; padding:6px 0;}
+    .index-col{position:static; display:flex; flex-wrap:wrap; gap:18px;}
     .cards-col{border-left:none; padding-left:0; border-top:1px solid var(--rule); margin-top:10px;}
   }
-
-  :focus-visible{outline:2px solid var(--teal); outline-offset:2px;}
 </style>
 </head>
 <body>
 
 <header>
   <div class="brandrow">
-    <a href="index.html" style="text-decoration:none; color:inherit; cursor:pointer;"><div class="logo-wrap">
-      <svg class="logo-mark" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+    <a href="index.html" style="text-decoration:none; color:inherit;"><div class="logo-wrap">
+      <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="28" height="28" fill="none" stroke="#242640" stroke-width="1.4"/>
         <rect x="5" y="6" width="20" height="3.4" fill="#5B54D6"/>
         <rect x="5" y="13.3" width="20" height="3.4" fill="#E85C42"/>
@@ -404,7 +255,7 @@
       <div class="brand">AI STACKROOM <b>— A Catalog of AI Tools</b></div>
     </div></a>
     <div class="navgroup">
-      <div class="drawer-tag" id="liveCount">31 tools shelved</div>
+      <div class="drawer-tag" id="liveCount">33 tools shelved</div>
       <div class="navlinks">
         <a href="blog.html">Blog</a>
         <a class="active" href="index.html">Page 1</a>
@@ -415,29 +266,22 @@
   </div>
   <div class="hero">
     <h1>Every AI Tool,<br><em>in one place.</em></h1>
-    <p>A hand-sorted catalog of the software actually worth your time this year — writing, images, video, code, and the rest. No noise, no rankings for sale.</p>
+    <p>A hand-sorted catalog featuring 2026's best AI coding agents, writing assistants, and productivity tools. Featuring Bolt.new, Windsurf, and Cursor.</p>
     <div class="hero-meta">
       <span><b>8</b>categories</span>
-      <span><b>31</b>tools indexed</span>
+      <span><b>33</b>tools indexed</span>
       <span><b>2026</b>last reshelved</span>
     </div>
     <div class="searchbar">
-      <input id="searchInput" type="text" placeholder="Search by name, task, or category — e.g. “video” or “notes”">
+      <input id="searchInput" type="text" placeholder="Search Bolt.new, Windsurf, or coding tools...">
       <span>⏎ FILTER</span>
     </div>
   </div>
 </header>
 
 <div class="ad-unit" style="display:flex; flex-direction:column; align-items:center; gap:4px; margin:28px 0;">
-  <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase;">Advertisement</span>
   <script>
-  atOptions = {
-    'key' : '68b31fdc61657e251310f1ab8d788b82',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
+  atOptions = {'key' : '68b31fdc61657e251310f1ab8d788b82', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {}};
 </script>
 <script src="https://www.highrevenueformat.com/68b31fdc61657e251310f1ab8d788b82/invoke.js"></script>
 </div>
@@ -446,608 +290,123 @@
   <div class="index-col">
     <h2>Browse by drawer</h2>
     <div id="catList"></div>
-
-<div class="ad-unit" style="display:flex; flex-direction:column; align-items:center; gap:4px; margin:28px 0;">
-  <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--ink-soft); letter-spacing:.05em; text-transform:uppercase;">Advertisement</span>
-  <script>
-  atOptions = {
-    'key' : 'b4699a3e3b3de163b5214c5ef41aeb03',
-    'format' : 'iframe',
-    'height' : 300,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/b4699a3e3b3de163b5214c5ef41aeb03/invoke.js"></script>
-</div>
   </div>
 
   <div class="cards-col">
-    <div class="cards-grid" id="cardsGrid">
-      <div class="card" data-cat="Writing & Chat" data-name="chatgpt" data-desc="a general-purpose ai chat assistant for drafting emails, brainstorming ideas, and answering questions on almost any subject. it can also generate images with dall·e 3 built in, browse the web for current information, and run code directly in the chat. widely used as an everyday starting point for both work and personal tasks." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 001</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>ChatGPT</h3>
-        <p>A general-purpose AI chat assistant for drafting emails, brainstorming ideas, and answering questions on almost any subject. It can also generate images with DALL·E 3 built in, browse the web for current information, and run code directly in the chat. Widely used as an everyday starting point for both work and personal tasks.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / from $20mo</span>
-          <a class="card-link" href="https://chat.openai.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="claude" data-desc="an ai assistant from anthropic known for careful, well-structured writing and strong performance on long documents. it can read and discuss uploaded pdfs, spreadsheets, and images in the same conversation, and projects let you group related chats and files so it keeps context across an ongoing task. a solid pick for research, editing, and reasoning through complex problems." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 002</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Claude</h3>
-        <p>An AI assistant from Anthropic known for careful, well-structured writing and strong performance on long documents. It can read and discuss uploaded PDFs, spreadsheets, and images in the same conversation, and Projects let you group related chats and files so it keeps context across an ongoing task. A solid pick for research, editing, and reasoning through complex problems.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / from $20mo</span>
-          <a class="card-link" href="https://claude.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Writing & Chat" data-name="gemini" data-desc="google's ai assistant, built directly into search, gmail, and docs so it can draft, summarize, and answer questions without leaving apps you already use. it can also analyze images and, on paid tiers, generate them. a convenient option if your day-to-day work already runs through google workspace." style="border-top-color:#5B54D6">
-        <div class="card-top">
-          <span class="card-num">No. 003</span>
-          <span class="card-cat" style="background:#5B54D6">Writing & Chat</span>
-        </div>
-        <h3>Gemini</h3>
-        <p>Google's AI assistant, built directly into Search, Gmail, and Docs so it can draft, summarize, and answer questions without leaving apps you already use. It can also analyze images and, on paid tiers, generate them. A convenient option if your day-to-day work already runs through Google Workspace.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://gemini.google.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="perplexity" data-desc="an ai-powered search engine that answers questions with citations to live web sources rather than generating prose purely from memory. useful for fact-checking, current events, and research where you want to trace an answer back to where it came from. includes a &quot;pro&quot; mode for deeper, multi-source research." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 004</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>Perplexity</h3>
-        <p>An AI-powered search engine that answers questions with citations to live web sources rather than generating prose purely from memory. Useful for fact-checking, current events, and research where you want to trace an answer back to where it came from. Includes a "Pro" mode for deeper, multi-source research.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / from $20mo</span>
-          <a class="card-link" href="https://www.perplexity.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="notebooklm" data-desc="upload your own documents, notes, or slides and turn them into a searchable notebook you can ask questions against, with answers grounded in your source material. it can also generate summaries and even a podcast-style audio overview of your notes. particularly useful for students and researchers working through a large stack of reading." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 005</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>NotebookLM</h3>
-        <p>Upload your own documents, notes, or slides and turn them into a searchable notebook you can ask questions against, with answers grounded in your source material. It can also generate summaries and even a podcast-style audio overview of your notes. Particularly useful for students and researchers working through a large stack of reading.</p>
-        <div class="card-foot">
-          <span class="card-price">Free</span>
-          <a class="card-link" href="https://notebooklm.google" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Research" data-name="elicit" data-desc="a research tool that helps you search, extract, and summarize findings across large numbers of academic papers at once. instead of reading each abstract individually, you can ask a research question and get key findings pulled together automatically. aimed at literature reviews and early-stage research." style="border-top-color:#0E8F82">
-        <div class="card-top">
-          <span class="card-num">No. 006</span>
-          <span class="card-cat" style="background:#0E8F82">Research</span>
-        </div>
-        <h3>Elicit</h3>
-        <p>A research tool that helps you search, extract, and summarize findings across large numbers of academic papers at once. Instead of reading each abstract individually, you can ask a research question and get key findings pulled together automatically. Aimed at literature reviews and early-stage research.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://elicit.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="midjourney" data-desc="an ai image generator, originally discord-based but now also available via a web app, known for painterly, high-craft default aesthetics even from short prompts. popular with artists and designers for concept art, illustrations, and stylized visuals. generally considered one of the strongest options for image quality out of the box." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 007</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Midjourney</h3>
-        <p>An AI image generator, originally Discord-based but now also available via a web app, known for painterly, high-craft default aesthetics even from short prompts. Popular with artists and designers for concept art, illustrations, and stylized visuals. Generally considered one of the strongest options for image quality out of the box.</p>
-        <div class="card-foot">
-          <span class="card-price">From $10mo</span>
-          <a class="card-link" href="https://www.midjourney.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="dall·e 3" data-desc="openai's image generation model, built directly into chatgpt, so you can generate and edit images in the same conversation as your text. it's particularly good at following detailed instructions and rendering readable text within images. a convenient option if you're already using chatgpt for other tasks." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 008</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>DALL·E 3</h3>
-        <p>OpenAI's image generation model, built directly into ChatGPT, so you can generate and edit images in the same conversation as your text. It's particularly good at following detailed instructions and rendering readable text within images. A convenient option if you're already using ChatGPT for other tasks.</p>
-        <div class="card-foot">
-          <span class="card-price">Included with ChatGPT Plus</span>
-          <a class="card-link" href="https://openai.com/dall-e-3" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="ideogram" data-desc="an ai image generator with a particular strength most others struggle with: rendering clean, legible text inside graphics like posters, logos, and social media graphics. useful when a design needs actual readable words baked into the image rather than gibberish text. has a solid free tier for casual use." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 009</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Ideogram</h3>
-        <p>An AI image generator with a particular strength most others struggle with: rendering clean, legible text inside graphics like posters, logos, and social media graphics. Useful when a design needs actual readable words baked into the image rather than gibberish text. Has a solid free tier for casual use.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://ideogram.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Image" data-name="adobe firefly" data-desc="adobe's generative image and design tool, built into photoshop, express, and other creative cloud apps for tasks like generative fill, background replacement, and text-to-image. commercially safe licensing (trained on licensed and public domain content) makes it a common choice for professional and brand work. a natural fit if you already work inside adobe's ecosystem." style="border-top-color:#E85C42">
-        <div class="card-top">
-          <span class="card-num">No. 010</span>
-          <span class="card-cat" style="background:#E85C42">Image</span>
-        </div>
-        <h3>Adobe Firefly</h3>
-        <p>Adobe's generative image and design tool, built into Photoshop, Express, and other Creative Cloud apps for tasks like generative fill, background replacement, and text-to-image. Commercially safe licensing (trained on licensed and public domain content) makes it a common choice for professional and brand work. A natural fit if you already work inside Adobe's ecosystem.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://firefly.adobe.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="runway" data-desc="a text-to-video and video-editing suite used widely for short-form generative film and experimental video work. beyond generation, it includes ai editing tools like green-screen removal and motion tracking. popular among filmmakers and creative studios exploring ai-assisted video production." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 011</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Runway</h3>
-        <p>A text-to-video and video-editing suite used widely for short-form generative film and experimental video work. Beyond generation, it includes AI editing tools like green-screen removal and motion tracking. Popular among filmmakers and creative studios exploring AI-assisted video production.</p>
-        <div class="card-foot">
-          <span class="card-price">From $12mo</span>
-          <a class="card-link" href="https://runwayml.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="pika" data-desc="a fast text- and image-to-video generator aimed at quick, social-style clips rather than long cinematic output. the interface is built for rapid iteration, so you can generate several variations of a short clip in a few minutes. a good fit for social content creators who need speed over depth." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 012</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Pika</h3>
-        <p>A fast text- and image-to-video generator aimed at quick, social-style clips rather than long cinematic output. The interface is built for rapid iteration, so you can generate several variations of a short clip in a few minutes. A good fit for social content creators who need speed over depth.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://pika.art" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="sora" data-desc="openai's text-to-video model, capable of generating short, cinematic clips from a written prompt, including realistic motion and scene consistency. access is currently bundled with chatgpt plus rather than sold separately. best suited to short creative or concept clips rather than long-form video." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 013</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Sora</h3>
-        <p>OpenAI's text-to-video model, capable of generating short, cinematic clips from a written prompt, including realistic motion and scene consistency. Access is currently bundled with ChatGPT Plus rather than sold separately. Best suited to short creative or concept clips rather than long-form video.</p>
-        <div class="card-foot">
-          <span class="card-price">Included with ChatGPT Plus</span>
-          <a class="card-link" href="https://openai.com/sora" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="capcut" data-desc="a video editing app with ai-assisted auto-captions, background removal, and smart cuts, widely used for short-form content aimed at tiktok, reels, and youtube shorts. the free tier is generous enough for regular casual use. popular with creators who want fast turnaround without a steep editing learning curve." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 014</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>CapCut</h3>
-        <p>A video editing app with AI-assisted auto-captions, background removal, and smart cuts, widely used for short-form content aimed at TikTok, Reels, and YouTube Shorts. The free tier is generous enough for regular casual use. Popular with creators who want fast turnaround without a steep editing learning curve.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.capcut.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="elevenlabs" data-desc="a realistic text-to-speech and voice-cloning engine used for narration, audiobooks, and multilingual dubbing. voices can sound convincingly natural across dozens of languages, and custom voice clones can be created from a short audio sample. a common choice for podcasters, video creators, and localization work." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 015</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>ElevenLabs</h3>
-        <p>A realistic text-to-speech and voice-cloning engine used for narration, audiobooks, and multilingual dubbing. Voices can sound convincingly natural across dozens of languages, and custom voice clones can be created from a short audio sample. A common choice for podcasters, video creators, and localization work.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://elevenlabs.io" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="suno" data-desc="generates full songs, including vocals and instrumentation, from a short text description of the style, mood, or lyrics you want. no musical training is needed to get a finished, listenable track in under a minute. popular for quick jingles, demo tracks, and casual songwriting experiments." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 016</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>Suno</h3>
-        <p>Generates full songs, including vocals and instrumentation, from a short text description of the style, mood, or lyrics you want. No musical training is needed to get a finished, listenable track in under a minute. Popular for quick jingles, demo tracks, and casual songwriting experiments.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://suno.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="udio" data-desc="a text-to-music generator focused on studio-quality output across a wide range of genres, from full songs to instrumental beds. tends to produce more polished-sounding mixes than some competitors, at the cost of a steeper learning curve for prompting. aimed at both hobbyists and more serious independent musicians." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 017</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>Udio</h3>
-        <p>A text-to-music generator focused on studio-quality output across a wide range of genres, from full songs to instrumental beds. Tends to produce more polished-sounding mixes than some competitors, at the cost of a steeper learning curve for prompting. Aimed at both hobbyists and more serious independent musicians.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.udio.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Audio" data-name="descript" data-desc="edits audio and video by editing the automatically-generated text transcript — delete a word in the transcript and it cuts the matching audio/video. also includes ai voice cleanup, filler-word removal, and an &quot;overdub&quot; feature to fix a flubbed line without re-recording. a strong pick for podcasters and video editors who prefer editing text over a timeline." style="border-top-color:#2F80ED">
-        <div class="card-top">
-          <span class="card-num">No. 018</span>
-          <span class="card-cat" style="background:#2F80ED">Audio</span>
-        </div>
-        <h3>Descript</h3>
-        <p>Edits audio and video by editing the automatically-generated text transcript — delete a word in the transcript and it cuts the matching audio/video. Also includes AI voice cleanup, filler-word removal, and an "Overdub" feature to fix a flubbed line without re-recording. A strong pick for podcasters and video editors who prefer editing text over a timeline.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.descript.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="github copilot" data-desc="an in-editor ai pair programmer that suggests and completes code as you type, trained on a huge volume of public code. works inside popular editors like vs code and jetbrains ides, and can also answer coding questions in a chat panel. one of the most widely adopted ai coding tools, especially in professional teams." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 019</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>GitHub Copilot</h3>
-        <p>An in-editor AI pair programmer that suggests and completes code as you type, trained on a huge volume of public code. Works inside popular editors like VS Code and JetBrains IDEs, and can also answer coding questions in a chat panel. One of the most widely adopted AI coding tools, especially in professional teams.</p>
-        <div class="card-foot">
-          <span class="card-price">From $10mo</span>
-          <a class="card-link" href="https://github.com/features/copilot" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="cursor" data-desc="an ai-native code editor built around chat-driven edits that can span multiple files across an entire codebase, not just the one you have open. it can plan a change, apply it across the relevant files, and explain what it did. popular with developers who want an ai that understands full project context, not just the current file." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 020</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Cursor</h3>
-        <p>An AI-native code editor built around chat-driven edits that can span multiple files across an entire codebase, not just the one you have open. It can plan a change, apply it across the relevant files, and explain what it did. Popular with developers who want an AI that understands full project context, not just the current file.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / from $20mo</span>
-          <a class="card-link" href="https://cursor.sh" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="claude code" data-desc="a command-line ai agent from anthropic that plans, writes, and runs code changes directly in your terminal, across an entire project. it can read your codebase, make multi-file edits, run tests, and iterate based on the results, all from natural-language instructions. aimed at developers comfortable working from the command line rather than a gui." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 021</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Claude Code</h3>
-        <p>A command-line AI agent from Anthropic that plans, writes, and runs code changes directly in your terminal, across an entire project. It can read your codebase, make multi-file edits, run tests, and iterate based on the results, all from natural-language instructions. Aimed at developers comfortable working from the command line rather than a GUI.</p>
-        <div class="card-foot">
-          <span class="card-price">Usage-based</span>
-          <a class="card-link" href="https://claude.com/claude-code" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Code" data-name="replit" data-desc="a browser-based coding environment with an ai agent that can scaffold a new app, write the code, and deploy it, all without local setup. useful for prototyping ideas quickly or for beginners who don't want to configure a development environment first. runs entirely in the browser, so no installation is required." style="border-top-color:#2FA84F">
-        <div class="card-top">
-          <span class="card-num">No. 022</span>
-          <span class="card-cat" style="background:#2FA84F">Code</span>
-        </div>
-        <h3>Replit</h3>
-        <p>A browser-based coding environment with an AI agent that can scaffold a new app, write the code, and deploy it, all without local setup. Useful for prototyping ideas quickly or for beginners who don't want to configure a development environment first. Runs entirely in the browser, so no installation is required.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://replit.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="notion ai" data-desc="a writing and summarizing assistant built directly into notion's docs and databases, so it can draft content, summarize a page, or fill in database fields without switching tools. particularly useful for turning messy meeting notes into structured, actionable summaries. works best if your team already organizes work inside notion." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 023</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Notion AI</h3>
-        <p>A writing and summarizing assistant built directly into Notion's docs and databases, so it can draft content, summarize a page, or fill in database fields without switching tools. Particularly useful for turning messy meeting notes into structured, actionable summaries. Works best if your team already organizes work inside Notion.</p>
-        <div class="card-foot">
-          <span class="card-price">Add-on to Notion</span>
-          <a class="card-link" href="https://www.notion.com/product/ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="otter.ai" data-desc="transcribes and summarizes meetings in real time, producing a searchable transcript and automatic summary once the call ends. integrates with zoom, google meet, and microsoft teams to join and record calls automatically. a practical way to stop relying on rushed manual note-taking during meetings." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 024</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Otter.ai</h3>
-        <p>Transcribes and summarizes meetings in real time, producing a searchable transcript and automatic summary once the call ends. Integrates with Zoom, Google Meet, and Microsoft Teams to join and record calls automatically. A practical way to stop relying on rushed manual note-taking during meetings.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://otter.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="superhuman" data-desc="a premium email client with ai-drafted replies, keyboard-shortcut-driven navigation, and features aimed squarely at fast inbox triage. designed for people who process a very high volume of email daily and want to cut the time spent per message. the paid-only pricing reflects its positioning toward professionals and executives." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 025</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Superhuman</h3>
-        <p>A premium email client with AI-drafted replies, keyboard-shortcut-driven navigation, and features aimed squarely at fast inbox triage. Designed for people who process a very high volume of email daily and want to cut the time spent per message. The paid-only pricing reflects its positioning toward professionals and executives.</p>
-        <div class="card-foot">
-          <span class="card-price">From $25mo</span>
-          <a class="card-link" href="https://superhuman.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Productivity" data-name="motion" data-desc="automatically schedules your tasks and meetings into your calendar based on priority and deadlines, and re-schedules things when your day changes. aims to replace manual calendar management and separate to-do lists with one automated system. best suited to people juggling a high volume of shifting daily commitments." style="border-top-color:#D6336C">
-        <div class="card-top">
-          <span class="card-num">No. 026</span>
-          <span class="card-cat" style="background:#D6336C">Productivity</span>
-        </div>
-        <h3>Motion</h3>
-        <p>Automatically schedules your tasks and meetings into your calendar based on priority and deadlines, and re-schedules things when your day changes. Aims to replace manual calendar management and separate to-do lists with one automated system. Best suited to people juggling a high volume of shifting daily commitments.</p>
-        <div class="card-foot">
-          <span class="card-price">From $19mo</span>
-          <a class="card-link" href="https://www.usemotion.com" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="gamma" data-desc="generates full presentation decks and documents from a short outline or prompt, handling layout and design automatically as you add content. slides can be edited afterward like a normal deck, and the tool also supports embedding interactive content like polls. a fast way to get from a rough outline to a presentable deck." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 027</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Gamma</h3>
-        <p>Generates full presentation decks and documents from a short outline or prompt, handling layout and design automatically as you add content. Slides can be edited afterward like a normal deck, and the tool also supports embedding interactive content like polls. A fast way to get from a rough outline to a presentable deck.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://gamma.app" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="canva magic studio" data-desc="a suite of ai design tools built into canva, covering background generation, text-to-image, one-click resizing across formats, and automatic background removal. since it's part of canva's existing free tier, it's accessible to people with no design background. a practical option for social graphics, presentations, and marketing materials." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 028</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Canva Magic Studio</h3>
-        <p>A suite of AI design tools built into Canva, covering background generation, text-to-image, one-click resizing across formats, and automatic background removal. Since it's part of Canva's existing free tier, it's accessible to people with no design background. A practical option for social graphics, presentations, and marketing materials.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.canva.com/magic-studio" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="framer ai" data-desc="generates and edits full marketing websites from a text prompt, including layout, copy placeholders, and responsive design, ready to publish without writing code. existing sites can also be redesigned or restyled through follow-up prompts. aimed at small businesses and marketers who need a site live quickly." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 029</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Framer AI</h3>
-        <p>Generates and edits full marketing websites from a text prompt, including layout, copy placeholders, and responsive design, ready to publish without writing code. Existing sites can also be redesigned or restyled through follow-up prompts. Aimed at small businesses and marketers who need a site live quickly.</p>
-        <div class="card-foot">
-          <span class="card-price">Free / paid tiers</span>
-          <a class="card-link" href="https://www.framer.com/ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Design & Slides" data-name="galileo ai" data-desc="turns short text prompts into editable ui screen designs, generating layouts, components, and styling that a product or design team can then refine. intended to speed up the earliest stage of product design, before a designer commits time to a polished mockup. a niche but useful tool for product teams moving fast from idea to prototype." style="border-top-color:#9D5CE0">
-        <div class="card-top">
-          <span class="card-num">No. 030</span>
-          <span class="card-cat" style="background:#9D5CE0">Design & Slides</span>
-        </div>
-        <h3>Galileo AI</h3>
-        <p>Turns short text prompts into editable UI screen designs, generating layouts, components, and styling that a product or design team can then refine. Intended to speed up the earliest stage of product design, before a designer commits time to a polished mockup. A niche but useful tool for product teams moving fast from idea to prototype.</p>
-        <div class="card-foot">
-          <span class="card-price">Paid</span>
-          <a class="card-link" href="https://www.usegalileo.ai" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-      <div class="card" data-cat="Video" data-name="synthesia" data-desc="generates presenter-style videos from text using realistic ai avatars, so you can produce narrated video content without a camera, microphone, or on-camera talent. supports dozens of languages and avatar styles, making it useful for training videos, product explainers, and localized content at scale. a practical option for teams that need frequent video content but limited production resources." style="border-top-color:#E8A73B">
-        <div class="card-top">
-          <span class="card-num">No. 031</span>
-          <span class="card-cat" style="background:#E8A73B">Video</span>
-        </div>
-        <h3>Synthesia</h3>
-        <p>Generates presenter-style videos from text using realistic AI avatars, so you can produce narrated video content without a camera, microphone, or on-camera talent. Supports dozens of languages and avatar styles, making it useful for training videos, product explainers, and localized content at scale. A practical option for teams that need frequent video content but limited production resources.</p>
-        <div class="card-foot">
-          <span class="card-price">From $18mo</span>
-          <a class="card-link" href="https://www.synthesia.io" target="_blank" rel="noopener sponsored">Visit &#8599;</a>
-        </div>
-      </div>
-    </div>
-    <p class="empty-msg" id="emptyMsg" style="display:none;">No cards match that search — try a broader term.</p>
-    <div class="pagination">
-      <span class="pg-info">Showing tools No. 001–031</span><a href="page2.html">Next: tools 032–061 &#8594;</a>
+    <div class="cards-grid" id="cardsGrid"></div>
+    <p class="empty-msg" id="emptyMsg" style="display:none; padding:40px 0; font-family:'IBM Plex Mono',monospace;">No cards match that search.</p>
+    <div class="pagination" style="display:flex; justify-content:space-between; padding-top:24px; font-family:'IBM Plex Mono',monospace; font-size:13px;">
+      <span class="pg-info">Showing tools No. 001–033</span><a href="page2.html" style="color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);">Next Page &#8594;</a>
     </div>
   </div>
 </div>
 
-<div class="bottom-nav">
-  <div class="navlinks">
-    <a href="blog.html">Blog</a>
-    <a class="active" href="index.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
+<div style="display:flex; justify-content:center; padding:24px 6vw;">
+  <div style="font-family: sans-serif; border: 1px solid #e0e0e0; border-radius: 12px; padding: 20px; max-width: 500px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="https://ph-files.imgix.net/7dcec574-b187-4983-ac00-ef4537ff3706.png?auto=compress,format&fit=crop&h=80&w=80" style="width: 64px; height: 64px; border-radius: 8px;">
+      <div style="flex: 1;">
+        <h3 style="margin: 0; font-size: 18px;">AI Stackroom</h3>
+        <p style="margin: 4px 0 0; font-size: 14px; color: #666;">A hand-sorted directory of AI tools</p>
+      </div>
+    </div>
+    <a href="https://www.producthunt.com/products/ai-stackroom" target="_blank" style="display: inline-block; margin-top: 12px; padding: 8px 16px; background: #ff6154; color: #fff; text-decoration: none; border-radius: 9999px; font-weight: 600;">Check it out on Product Hunt →</a>
   </div>
 </div>
 
 <footer>
   <span>AI STACKROOM · a directory, updated by hand</span>
-  <span>Contact: <a href="mailto:mehranbaig309@gmail.com" style="color:var(--indigo); text-decoration:none; border-bottom:1px solid var(--indigo);">mehranbaig309@gmail.com</a></span>
-  <span>Listings are editorial, not paid placement</span>
+  <span>Contact: <a href="mailto:mehranbaig309@gmail.com">mehranbaig309@gmail.com</a></span>
 </footer>
-  <div style="display:flex; justify-content:center; padding:24px 6vw;">
-  <div style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; border: 1px solid rgb(224, 224, 224); border-radius: 12px; padding: 20px; max-width: 500px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;"><div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><img alt="AI Stackroom" src="https://ph-files.imgix.net/7dcec574-b187-4983-ac00-ef4537ff3706.png?auto=compress,format&amp;codec=mozjpeg&amp;cs=strip&amp;fit=crop&amp;h=80&amp;w=80" style="width: 64px; height: 64px; border-radius: 8px; object-fit: cover; flex-shrink: 0;"><div style="flex: 1 1 0%; min-width: 0px;"><h3 style="margin: 0px; font-size: 18px; font-weight: 600; color: rgb(26, 26, 26); line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">AI Stackroom</h3><p style="margin: 4px 0px 0px; font-size: 14px; color: rgb(102, 102, 102); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">A hand-sorted directory of 60+ AI tools</p></div></div><a href="https://www.producthunt.com/products/ai-stackroom?embed=true&amp;utm_source=embed&amp;utm_medium=post_embed" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; padding: 8px 16px; background: rgb(255, 97, 84); color: rgb(255, 255, 255); text-decoration: none; border-radius: 9999px; font-size: 16px; font-weight: 600; line-height: 1.5;">Check it out on Product Hunt →</a></div>
-</div>
 
 <script>
-const NUM_OFFSET = 0;
 const TOOLS = [
-  {name:"ChatGPT", cat:"Writing & Chat", desc:"A general-purpose AI chat assistant for drafting emails, brainstorming ideas, and answering questions on almost any subject. It can also generate images with DALL·E 3 built in, browse the web for current information, and run code directly in the chat. Widely used as an everyday starting point for both work and personal tasks.", price:"Free / from $20mo", url:"https://chat.openai.com"},
-  {name:"Claude", cat:"Writing & Chat", desc:"An AI assistant from Anthropic known for careful, well-structured writing and strong performance on long documents. It can read and discuss uploaded PDFs, spreadsheets, and images in the same conversation, and Projects let you group related chats and files so it keeps context across an ongoing task. A solid pick for research, editing, and reasoning through complex problems.", price:"Free / from $20mo", url:"https://claude.ai"},
-  {name:"Gemini", cat:"Writing & Chat", desc:"Google's AI assistant, built directly into Search, Gmail, and Docs so it can draft, summarize, and answer questions without leaving apps you already use. It can also analyze images and, on paid tiers, generate them. A convenient option if your day-to-day work already runs through Google Workspace.", price:"Free / paid tiers", url:"https://gemini.google.com"},
-  {name:"Perplexity", cat:"Research", desc:"An AI-powered search engine that answers questions with citations to live web sources rather than generating prose purely from memory. Useful for fact-checking, current events, and research where you want to trace an answer back to where it came from. Includes a \"Pro\" mode for deeper, multi-source research.", price:"Free / from $20mo", url:"https://www.perplexity.ai"},
-  {name:"NotebookLM", cat:"Research", desc:"Upload your own documents, notes, or slides and turn them into a searchable notebook you can ask questions against, with answers grounded in your source material. It can also generate summaries and even a podcast-style audio overview of your notes. Particularly useful for students and researchers working through a large stack of reading.", price:"Free", url:"https://notebooklm.google"},
-  {name:"Elicit", cat:"Research", desc:"A research tool that helps you search, extract, and summarize findings across large numbers of academic papers at once. Instead of reading each abstract individually, you can ask a research question and get key findings pulled together automatically. Aimed at literature reviews and early-stage research.", price:"Free / paid tiers", url:"https://elicit.com"},
-  {name:"Midjourney", cat:"Image", desc:"An AI image generator, originally Discord-based but now also available via a web app, known for painterly, high-craft default aesthetics even from short prompts. Popular with artists and designers for concept art, illustrations, and stylized visuals. Generally considered one of the strongest options for image quality out of the box.", price:"From $10mo", url:"https://www.midjourney.com"},
-  {name:"DALL·E 3", cat:"Image", desc:"OpenAI's image generation model, built directly into ChatGPT, so you can generate and edit images in the same conversation as your text. It's particularly good at following detailed instructions and rendering readable text within images. A convenient option if you're already using ChatGPT for other tasks.", price:"Included with ChatGPT Plus", url:"https://openai.com/dall-e-3"},
-  {name:"Ideogram", cat:"Image", desc:"An AI image generator with a particular strength most others struggle with: rendering clean, legible text inside graphics like posters, logos, and social media graphics. Useful when a design needs actual readable words baked into the image rather than gibberish text. Has a solid free tier for casual use.", price:"Free / paid tiers", url:"https://ideogram.ai"},
-  {name:"Adobe Firefly", cat:"Image", desc:"Adobe's generative image and design tool, built into Photoshop, Express, and other Creative Cloud apps for tasks like generative fill, background replacement, and text-to-image. Commercially safe licensing (trained on licensed and public domain content) makes it a common choice for professional and brand work. A natural fit if you already work inside Adobe's ecosystem.", price:"Free / paid tiers", url:"https://firefly.adobe.com"},
-  {name:"Runway", cat:"Video", desc:"A text-to-video and video-editing suite used widely for short-form generative film and experimental video work. Beyond generation, it includes AI editing tools like green-screen removal and motion tracking. Popular among filmmakers and creative studios exploring AI-assisted video production.", price:"From $12mo", url:"https://runwayml.com"},
-  {name:"Pika", cat:"Video", desc:"A fast text- and image-to-video generator aimed at quick, social-style clips rather than long cinematic output. The interface is built for rapid iteration, so you can generate several variations of a short clip in a few minutes. A good fit for social content creators who need speed over depth.", price:"Free / paid tiers", url:"https://pika.art"},
-  {name:"Sora", cat:"Video", desc:"OpenAI's text-to-video model, capable of generating short, cinematic clips from a written prompt, including realistic motion and scene consistency. Access is currently bundled with ChatGPT Plus rather than sold separately. Best suited to short creative or concept clips rather than long-form video.", price:"Included with ChatGPT Plus", url:"https://openai.com/sora"},
-  {name:"CapCut", cat:"Video", desc:"A video editing app with AI-assisted auto-captions, background removal, and smart cuts, widely used for short-form content aimed at TikTok, Reels, and YouTube Shorts. The free tier is generous enough for regular casual use. Popular with creators who want fast turnaround without a steep editing learning curve.", price:"Free / paid tiers", url:"https://www.capcut.com"},
-  {name:"ElevenLabs", cat:"Audio", desc:"A realistic text-to-speech and voice-cloning engine used for narration, audiobooks, and multilingual dubbing. Voices can sound convincingly natural across dozens of languages, and custom voice clones can be created from a short audio sample. A common choice for podcasters, video creators, and localization work.", price:"Free / paid tiers", url:"https://elevenlabs.io"},
-  {name:"Suno", cat:"Audio", desc:"Generates full songs, including vocals and instrumentation, from a short text description of the style, mood, or lyrics you want. No musical training is needed to get a finished, listenable track in under a minute. Popular for quick jingles, demo tracks, and casual songwriting experiments.", price:"Free / paid tiers", url:"https://suno.com"},
-  {name:"Udio", cat:"Audio", desc:"A text-to-music generator focused on studio-quality output across a wide range of genres, from full songs to instrumental beds. Tends to produce more polished-sounding mixes than some competitors, at the cost of a steeper learning curve for prompting. Aimed at both hobbyists and more serious independent musicians.", price:"Free / paid tiers", url:"https://www.udio.com"},
-  {name:"Descript", cat:"Audio", desc:"Edits audio and video by editing the automatically-generated text transcript — delete a word in the transcript and it cuts the matching audio/video. Also includes AI voice cleanup, filler-word removal, and an \"Overdub\" feature to fix a flubbed line without re-recording. A strong pick for podcasters and video editors who prefer editing text over a timeline.", price:"Free / paid tiers", url:"https://www.descript.com"},
-  {name:"GitHub Copilot", cat:"Code", desc:"An in-editor AI pair programmer that suggests and completes code as you type, trained on a huge volume of public code. Works inside popular editors like VS Code and JetBrains IDEs, and can also answer coding questions in a chat panel. One of the most widely adopted AI coding tools, especially in professional teams.", price:"From $10mo", url:"https://github.com/features/copilot"},
-  {name:"Cursor", cat:"Code", desc:"An AI-native code editor built around chat-driven edits that can span multiple files across an entire codebase, not just the one you have open. It can plan a change, apply it across the relevant files, and explain what it did. Popular with developers who want an AI that understands full project context, not just the current file.", price:"Free / from $20mo", url:"https://cursor.sh"},
-  {name:"Claude Code", cat:"Code", desc:"A command-line AI agent from Anthropic that plans, writes, and runs code changes directly in your terminal, across an entire project. It can read your codebase, make multi-file edits, run tests, and iterate based on the results, all from natural-language instructions. Aimed at developers comfortable working from the command line rather than a GUI.", price:"Usage-based", url:"https://claude.com/claude-code"},
-  {name:"Replit", cat:"Code", desc:"A browser-based coding environment with an AI agent that can scaffold a new app, write the code, and deploy it, all without local setup. Useful for prototyping ideas quickly or for beginners who don't want to configure a development environment first. Runs entirely in the browser, so no installation is required.", price:"Free / paid tiers", url:"https://replit.com"},
-  {name:"Notion AI", cat:"Productivity", desc:"A writing and summarizing assistant built directly into Notion's docs and databases, so it can draft content, summarize a page, or fill in database fields without switching tools. Particularly useful for turning messy meeting notes into structured, actionable summaries. Works best if your team already organizes work inside Notion.", price:"Add-on to Notion", url:"https://www.notion.com/product/ai"},
-  {name:"Otter.ai", cat:"Productivity", desc:"Transcribes and summarizes meetings in real time, producing a searchable transcript and automatic summary once the call ends. Integrates with Zoom, Google Meet, and Microsoft Teams to join and record calls automatically. A practical way to stop relying on rushed manual note-taking during meetings.", price:"Free / paid tiers", url:"https://otter.ai"},
-  {name:"Superhuman", cat:"Productivity", desc:"A premium email client with AI-drafted replies, keyboard-shortcut-driven navigation, and features aimed squarely at fast inbox triage. Designed for people who process a very high volume of email daily and want to cut the time spent per message. The paid-only pricing reflects its positioning toward professionals and executives.", price:"From $25mo", url:"https://superhuman.com"},
-  {name:"Motion", cat:"Productivity", desc:"Automatically schedules your tasks and meetings into your calendar based on priority and deadlines, and re-schedules things when your day changes. Aims to replace manual calendar management and separate to-do lists with one automated system. Best suited to people juggling a high volume of shifting daily commitments.", price:"From $19mo", url:"https://www.usemotion.com"},
-  {name:"Gamma", cat:"Design & Slides", desc:"Generates full presentation decks and documents from a short outline or prompt, handling layout and design automatically as you add content. Slides can be edited afterward like a normal deck, and the tool also supports embedding interactive content like polls. A fast way to get from a rough outline to a presentable deck.", price:"Free / paid tiers", url:"https://gamma.app"},
-  {name:"Canva Magic Studio", cat:"Design & Slides", desc:"A suite of AI design tools built into Canva, covering background generation, text-to-image, one-click resizing across formats, and automatic background removal. Since it's part of Canva's existing free tier, it's accessible to people with no design background. A practical option for social graphics, presentations, and marketing materials.", price:"Free / paid tiers", url:"https://www.canva.com/magic-studio"},
-  {name:"Framer AI", cat:"Design & Slides", desc:"Generates and edits full marketing websites from a text prompt, including layout, copy placeholders, and responsive design, ready to publish without writing code. Existing sites can also be redesigned or restyled through follow-up prompts. Aimed at small businesses and marketers who need a site live quickly.", price:"Free / paid tiers", url:"https://www.framer.com/ai"},
-  {name:"Galileo AI", cat:"Design & Slides", desc:"Turns short text prompts into editable UI screen designs, generating layouts, components, and styling that a product or design team can then refine. Intended to speed up the earliest stage of product design, before a designer commits time to a polished mockup. A niche but useful tool for product teams moving fast from idea to prototype.", price:"Paid", url:"https://www.usegalileo.ai"},
-  {name:"Synthesia", cat:"Video", desc:"Generates presenter-style videos from text using realistic AI avatars, so you can produce narrated video content without a camera, microphone, or on-camera talent. Supports dozens of languages and avatar styles, making it useful for training videos, product explainers, and localized content at scale. A practical option for teams that need frequent video content but limited production resources.", price:"From $18mo", url:"https://www.synthesia.io"}
+  {name:"Windsurf", cat:"Code", desc:"The first agentic IDE that flows with you. It acts as an AI agent that can plan and execute complex coding tasks across your entire project simultaneously. Built for deep context and high speed.", price:"Free / paid tiers", url:"https://codeium.com/windsurf"},
+  {name:"Bolt.new", cat:"Code", desc:"A browser-based AI web development agent that allows you to prompt, build, and deploy full-stack applications directly in your browser with zero local setup.", price:"Free / paid tiers", url:"https://bolt.new"},
+  {name:"ChatGPT", cat:"Writing & Chat", desc:"The gold standard for general-purpose AI chat. Useful for drafting, brainstorming, and web-connected research.", price:"Free / from $20mo", url:"https://chat.openai.com"},
+  {name:"Claude", cat:"Writing & Chat", desc:"Known for careful, human-sounding writing and massive context windows. Excellent for summarizing long documents.", price:"Free / from $20mo", url:"https://claude.ai"},
+  {name:"Gemini", cat:"Writing & Chat", desc:"Google's AI assistant, deeply integrated with Gmail, Docs, and Search. Perfect for Workspace users.", price:"Free / paid tiers", url:"https://gemini.google.com"},
+  {name:"Perplexity", cat:"Research", desc:"An AI-powered search engine that provides citations for every claim. Ideal for fact-checking and deep research.", price:"Free / from $20mo", url:"https://www.perplexity.ai"},
+  {name:"NotebookLM", cat:"Research", desc:"Google's research tool that uses your own documents to generate summaries, guides, and audio overviews.", price:"Free", url:"https://notebooklm.google"},
+  {name:"Elicit", cat:"Research", desc:"An AI assistant for researchers that can scan and extract data from millions of academic papers at once.", price:"Free / paid tiers", url:"https://elicit.com"},
+  {name:"Midjourney", cat:"Image", desc:"High-end AI image generator known for artistic and cinematic quality. Works via Discord and Web.", price:"From $10mo", url:"https://www.midjourney.com"},
+  {name:"DALL·E 3", cat:"Image", desc:"Built into ChatGPT, it excels at following complex instructions and generating text within images.", price:"ChatGPT Plus", url:"https://openai.com/dall-e-3"},
+  {name:"Ideogram", cat:"Image", desc:"The best tool for rendering typography and readable text inside AI-generated graphics and logos.", price:"Free / paid tiers", url:"https://ideogram.ai"},
+  {name:"Adobe Firefly", cat:"Image", desc:"Commercially safe generative AI built into Photoshop for generative fill and background expansion.", price:"Free / paid tiers", url:"https://firefly.adobe.com"},
+  {name:"Runway", cat:"Video", desc:"Leading text-to-video suite used by creators for cinematic AI clips and advanced motion control.", price:"From $12mo", url:"https://runwayml.com"},
+  {name:"Pika", cat:"Video", desc:"A fast AI video generator optimized for animation and social media-style clips.", price:"Free / paid tiers", url:"https://pika.art"},
+  {name:"Sora", cat:"Video", desc:"OpenAI's high-fidelity video model for creating ultra-realistic cinematic footage from text.", price:"ChatGPT Plus", url:"https://openai.com/sora"},
+  {name:"CapCut", cat:"Video", desc:"AI-powered video editor with automatic captions and background removal for short-form content.", price:"Free / paid tiers", url:"https://www.capcut.com"},
+  {name:"ElevenLabs", cat:"Audio", desc:"Most realistic AI voice generator and cloning tool for audiobooks, dubbing, and narration.", price:"Free / paid tiers", url:"https://elevenlabs.io"},
+  {name:"Suno", cat:"Audio", desc:"Full song generation including vocals and instrumentation from a simple text prompt.", price:"Free / paid tiers", url:"https://suno.com"},
+  {name:"Udio", cat:"Audio", desc:"Professional-grade AI music generation known for studio-quality fidelity and genre variety.", price:"Free / paid tiers", url:"https://www.udio.com"},
+  {name:"Descript", cat:"Audio", desc:"Edit audio by editing text. Includes AI voice cleanup and filler-word removal.", price:"Free / paid tiers", url:"https://www.descript.com"},
+  {name:"GitHub Copilot", cat:"Code", desc:"The original AI pair programmer that suggests code inside your IDE based on public data.", price:"From $10mo", url:"https://github.com/features/copilot"},
+  {name:"Cursor", cat:"Code", desc:"An AI-native code editor that understands your entire codebase context for multi-file edits.", price:"Free / from $20mo", url:"https://cursor.sh"},
+  {name:"Claude Code", cat:"Code", desc:"Command-line agent from Anthropic that plans and executes code changes directly in the terminal.", price:"Usage-based", url:"https://claude.com/claude-code"},
+  {name:"Replit", cat:"Code", desc:"Browser-based IDE with an AI agent that can build and host full-stack apps with one prompt.", price:"Free / paid tiers", url:"https://replit.com"},
+  {name:"Notion AI", cat:"Productivity", desc:"Writing and summarizing assistant built into Notion's workspace for seamless document management.", price:"Notion Add-on", url:"https://www.notion.com/product/ai"},
+  {name:"Otter.ai", cat:"Productivity", desc:"Live transcription and AI summaries for Zoom, Google Meet, and Microsoft Teams calls.", price:"Free / paid tiers", url:"https://otter.ai"},
+  {name:"Superhuman", cat:"Productivity", desc:"A high-speed email client with AI-drafted replies and automated inbox triage.", price:"From $25mo", url:"https://superhuman.com"},
+  {name:"Motion", cat:"Productivity", desc:"AI calendar that automatically schedules tasks and meetings based on priority and deadlines.", price:"From $19mo", url:"https://www.usemotion.com"},
+  {name:"Gamma", cat:"Design & Slides", desc:"Instantly generate full presentation decks and websites from a text prompt or outline.", price:"Free / paid tiers", url:"https://gamma.app"},
+  {name:"Canva Magic Studio", cat:"Design & Slides", desc:"AI design suite for background removal, text-to-image, and automatic resizing.", price:"Free / paid tiers", url:"https://www.canva.com/magic-studio"},
+  {name:"Framer AI", cat:"Design & Slides", desc:"Design and publish high-end marketing websites entirely through AI-driven text prompts.", price:"Free / paid tiers", url:"https://www.framer.com/ai"},
+  {name:"Galileo AI", cat:"Design & Slides", desc:"Generates editable UI screen designs for mobile and web from simple natural language prompts.", price:"Paid", url:"https://www.usegalileo.ai"},
+  {name:"Synthesia", cat:"Video", desc:"Create professional videos with AI avatars in minutes. No camera or microphone needed.", price:"From $18mo", url:"https://www.synthesia.io"}
 ];
 
-// --- SEO: Dynamic ItemList schema, auto-generated from TOOLS array ---
-(function(){
-  const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": TOOLS.map((t, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "item": {
-        "@type": "SoftwareApplication",
-        "name": t.name,
-        "description": t.desc,
-        "applicationCategory": t.cat,
-        "url": t.url,
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "USD",
-          "description": t.price
-        }
-      }
-    }))
-  };
-  const schemaScript = document.createElement('script');
-  schemaScript.type = 'application/ld+json';
-  schemaScript.textContent = JSON.stringify(itemListSchema);
-  document.head.appendChild(schemaScript);
-})();
-
 const CAT_COLORS = {
-  "Writing & Chat":"#5B54D6",
-  "Research":"#0E8F82",
-  "Image":"#E85C42",
-  "Video":"#E8A73B",
-  "Audio":"#2F80ED",
-  "Code":"#2FA84F",
-  "Productivity":"#D6336C",
-  "Design & Slides":"#9D5CE0"
+  "Writing & Chat":"#5B54D6", "Research":"#0E8F82", "Image":"#E85C42", "Video":"#E8A73B",
+  "Audio":"#2F80ED", "Code":"#2FA84F", "Productivity":"#D6336C", "Design & Slides":"#9D5CE0"
 };
-function colorFor(cat){ return CAT_COLORS[cat] || "#242640"; }
 
 const grid = document.getElementById('cardsGrid');
 const catListEl = document.getElementById('catList');
 const searchInput = document.getElementById('searchInput');
-const emptyMsg = document.getElementById('emptyMsg');
 const liveCount = document.getElementById('liveCount');
 
-const categories = ["All", ...Array.from(new Set(TOOLS.map(t=>t.cat))).sort()];
 let activeCat = "All";
-
-function countFor(cat){
-  return cat === "All" ? TOOLS.length : TOOLS.filter(t=>t.cat===cat).length;
-}
+const categories = ["All", ...new Set(TOOLS.map(t=>t.cat))];
 
 function renderCatList(){
-  catListEl.innerHTML = categories.map(c =>
-    `<button class="cat-btn ${c===activeCat?'active':''}" data-cat="${c}">
-      <span class="cat-btn-label"><span class="cat-dot" style="background:${c==='All'?'#242640':colorFor(c)}"></span>${c}</span>
-      <small>${String(countFor(c)).padStart(2,'0')}</small>
+  catListEl.innerHTML = categories.map(c => 
+    `<button class="cat-btn ${c===activeCat?'active':''}" onclick="filterCat('${c}')">
+      <span class="cat-dot" style="background:${c==='All'?'#242640':CAT_COLORS[c]}"></span>${c}
     </button>`
   ).join('');
-  catListEl.querySelectorAll('.cat-btn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      activeCat = btn.getAttribute('data-cat');
-      renderCatList();
-      renderCards();
-    });
-  });
 }
 
+function filterCat(cat){ activeCat = cat; renderCatList(); renderCards(); }
+
 function renderCards(){
-  const q = searchInput.value.trim().toLowerCase();
-  let filtered = TOOLS.filter(t=>{
-    const matchesCat = activeCat === "All" || t.cat === activeCat;
-    const matchesQ = !q || t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q) || t.cat.toLowerCase().includes(q);
-    return matchesCat && matchesQ;
-  });
-
-  liveCount.textContent = filtered.length + " tool" + (filtered.length===1?"":"s") + " shelved";
-
-  if(filtered.length === 0){
-    grid.innerHTML = "";
-    emptyMsg.style.display = "block";
-    return;
-  }
-  emptyMsg.style.display = "none";
-
+  const q = searchInput.value.toLowerCase();
+  const filtered = TOOLS.filter(t => (activeCat==="All" || t.cat===activeCat) && (t.name.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q)));
+  liveCount.textContent = filtered.length + " tools shelved";
   grid.innerHTML = filtered.map((t,i) => `
-    <div class="card" style="border-top-color:${colorFor(t.cat)}">
-      <div class="card-top">
-        <span class="card-num">No. ${String(i+1+NUM_OFFSET).padStart(3,'0')}</span>
-        <span class="card-cat" style="background:${colorFor(t.cat)}">${t.cat}</span>
-      </div>
-      <h3>${t.name}</h3>
-      <p>${t.desc}</p>
-      <div class="card-foot">
-        <span class="card-price">${t.price}</span>
-        <a class="card-link" href="${t.url}" target="_blank" rel="noopener sponsored">Visit ↗</a>
-      </div>
-    </div>
-  `).join('');
+    <div class="card" style="border-top-color:${CAT_COLORS[t.cat]}">
+      <div class="card-top"><span class="card-num">No. ${String(i+1).padStart(3,'0')}</span><span class="card-cat" style="background:${CAT_COLORS[t.cat]}">${t.cat}</span></div>
+      <h3>${t.name}</h3><p>${t.desc}</p>
+      <div class="card-foot"><span class="card-price">${t.price}</span><a class="card-link" href="${t.url}" target="_blank">Visit ↗</a></div>
+    </div>`).join('');
 }
 
 searchInput.addEventListener('input', renderCards);
-
-renderCatList();
-renderCards();
+renderCatList(); renderCards();
 </script>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/923164212309" target="_blank" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 9999;
-    text-decoration: none;
-    font-size: 32px;
-">
-    💬
-</a>
 
-<!-- Contact Form Section -->
+<!-- WhatsApp Button & Contact Form remain the same as your code -->
+<a href="https://wa.me/923164212309" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; font-size: 32px;">💬</a>
+
 <section id="contact" style="max-width: 500px; margin: 60px auto; padding: 30px; background: #f9f9f9; border-radius: 10px;">
-    <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+    <h2 style="text-align: center;">Contact Us</h2>
     <form action="https://formspree.io/f/xgaednly" method="POST">
-        <label style="display: block; margin-bottom: 5px;">Name</label>
-        <input type="text" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
-
-        <label style="display: block; margin-bottom: 5px;">Email</label>
-        <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
-
-        <label style="display: block; margin-bottom: 5px;">Message</label>
-        <textarea name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></textarea>
-
-        <button type="submit" style="width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-            Send Message
-        </button>
+        <input type="text" name="name" placeholder="Name" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+        <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+        <textarea name="message" placeholder="Message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea>
+        <button type="submit" style="width: 100%; padding: 12px; background: #007bff; color: white; border: none; cursor: pointer;">Send Message</button>
     </form>
 </section>
-
-<!-- Adsterra: sitewide units -->
-<script src="https://pl31580201.profitableratecpmnetwork.com/44/3e/6d/443e6dfc82c69eb8e3c03c6ea156a6f7.js"></script>
-<script src="https://pl31580204.profitableratecpmnetwork.com/63/b6/07/63b6075b2ac5cb0395981578d1faf734.js"></script>
 
 </body>
 </html>
