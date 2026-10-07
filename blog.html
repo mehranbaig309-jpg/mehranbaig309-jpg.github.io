@@ -2,56 +2,119 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AI Stackroom Blog — Insights & Guides</title>
-<!-- AD #1: POPUNDER -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Stackroom Blog — Insights, News & Comparisons</title>
+
+<!-- ADSTERRA #1: POPUNDER -->
 <script src="https://pl31580201.profitableratecpmnetwork.com/44/3e/6d/443e6dfc82c69eb8e3c03c6ea156a6f7.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#FBF5EA; --paper-card:#FFFFFF; --indigo:#5B54D6; --ink-soft:#615E78;}
-  body{background:var(--paper); font-family:sans-serif; margin:0;}
-  header{padding:20px 6vw; border-bottom:1px solid #ddd; display:flex; justify-content:space-between;}
-  .navlinks a{margin-left:10px; color:var(--indigo); text-decoration:none; border:1px solid; padding:4px 8px; font-size:12px;}
-  main{max-width:800px; margin:40px auto; padding:20px;}
-  .blog-card{background:#fff; padding:20px; border-left:5px solid var(--indigo); margin-bottom:20px; box-shadow:0 2px 5px rgba(0,0,0,0.1); text-decoration:none; display:block; color:inherit;}
-  .blog-card h2{margin-top:0;}
-  .blog-card p{color:var(--ink-soft); font-size:14px;}
+  :root{--paper:#FBF5EA; --paper-card:#FFFFFF; --ink:#242640; --ink-soft:#615E78; --indigo:#5B54D6; --coral:#E85C42; --rule:#D9CDAF;}
+  body{background:var(--paper); font-family:'Inter', sans-serif; margin:0; color:var(--ink);}
+  header{padding:20px 6vw; border-bottom:1px solid #ddd; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;}
+  .brand{font-weight:bold; font-family:'Fraunces', serif; font-size:20px; text-decoration:none; color:inherit;}
+  .navlinks a{margin-left:10px; color:var(--indigo); text-decoration:none; border:1px solid; padding:4px 8px; font-size:12px; border-radius:2px;}
+  .navlinks a.active{background:var(--indigo); color:#fff;}
+  .navlinks a.news-link{border-color:var(--coral); color:var(--coral);}
+  
+  main{max-width:850px; margin:40px auto; padding:20px;}
+  h1{font-family:'Fraunces', serif; font-size:42px; margin-bottom:30px;}
+  
+  .blog-card{background:#fff; padding:25px; border-left:5px solid var(--indigo); margin-bottom:25px; box-shadow:0 2px 8px rgba(0,0,0,0.05); text-decoration:none; display:block; color:inherit; transition: 0.2s;}
+  .blog-card:hover{transform: translateY(-3px); border-left-color: var(--coral);}
+  .blog-card.news-style{border-left-color: var(--coral);}
+  .blog-card h2{margin:0 0 10px 0; font-family:'Fraunces', serif; font-size:26px;}
+  .blog-card p{color:var(--ink-soft); font-size:15px; margin:0 0 15px 0; line-height:1.6;}
+  .date-tag{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:1px;}
+  .read-more{font-weight:600; color:var(--indigo); font-size:14px;}
 </style>
 </head>
 <body>
+
 <header>
-  <div style="font-weight:bold;">AI STACKROOM BLOG</div>
+  <a href="index.html" class="brand">AI STACKROOM BLOG</a>
   <nav class="navlinks">
+    <a href="ai-news.html" class="news-link">🔥 AI News</a>
+    <a class="active" href="blog.html">Blog</a>
     <a href="index.html">Page 1</a>
     <a href="page2.html">Page 2</a>
     <a href="page3.html">Page 3</a>
   </nav>
 </header>
 
-<!-- AD #2: 728x90 Header -->
+<!-- ADSTERRA #2: 728x90 Header Banner -->
 <div style="text-align:center; margin:20px;">
-  <script type="text/javascript">atOptions={'key':'68b31fdc61657e251310f1ab8d788b82','format':'iframe','height':90,'width':728,'params':{}};</script>
+  <script type="text/javascript">
+	atOptions = { 'key' : '68b31fdc61657e251310f1ab8d788b82', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+  </script>
   <script src="https://www.highrevenueformat.com/68b31fdc61657e251310f1ab8d788b82/invoke.js"></script>
 </div>
 
 <main>
-  <h1>Latest AI Articles</h1>
+  <h1>Latest Articles & Updates</h1>
 
+  <!-- NEW ARTICLE 1: v0 vs BOLT -->
+  <a href="blog-v0-vs-bolt.html" class="blog-card">
+    <span class="date-tag">October 2026 • Comparison</span>
+    <h2>v0.dev vs Bolt.new: Which AI Web Builder is Better?</h2>
+    <p>A detailed comparison for US developers. We look at React component generation vs full-stack browser deployment.</p>
+    <span class="read-more">Read Full Comparison →</span>
+  </a>
+
+  <!-- NEW ITEM: DAILY NEWS -->
+  <a href="ai-news.html" class="blog-card news-style">
+    <span class="date-tag">October 2026 • Live Updates</span>
+    <h2>Daily AI News: What happened in AI today?</h2>
+    <p>Get the latest breaking news from OpenAI, Anthropic, and the trending agentic IDE world in San Francisco.</p>
+    <span class="read-more" style="color:var(--coral)">Check Today's News →</span>
+  </a>
+
+  <!-- PREVIOUS ARTICLES -->
   <a href="blog-windsurf-vs-cursor.html" class="blog-card">
-    <h2>Windsurf vs Cursor: Battle of AI IDEs</h2>
-    <p>Compare the two most powerful agentic coding tools in 2026.</p>
+    <span class="date-tag">September 2026 • Battle</span>
+    <h2>Windsurf vs Cursor: Battle of the Agentic IDEs</h2>
+    <p>Why Windsurf's "Flow" feature is giving Cursor a run for its money in the developer community.</p>
+    <span class="read-more">Read Article →</span>
   </a>
 
   <a href="blog-ai-tools-for-students.html" class="blog-card">
-    <h2>Best Free AI Tools for Students</h2>
-    <p>Summarize lectures and research papers without paying anything.</p>
+    <span class="date-tag">September 2026 • Student Guide</span>
+    <h2>Best Free AI Tools for Students (2026)</h2>
+    <p>How to use NotebookLM, Perplexity, and Elicit to finish your research and essays in half the time.</p>
+    <span class="read-more">Read Article →</span>
   </a>
 
   <a href="blog-free-ai-tools.html" class="blog-card">
+    <span class="date-tag">September 2026 • Beginners</span>
     <h2>9 Free AI Tools for Beginners</h2>
-    <p>No credit card required. Essential tools to start with AI.</p>
+    <p>Start your AI journey without a credit card. Writing, images, and research tools with real free tiers.</p>
+    <span class="read-more">Read Article →</span>
   </a>
+
+  <!-- ADSTERRA #3: 300x250 Middle Banner -->
+  <div style="text-align:center; margin:40px 0;">
+    <script type="text/javascript">
+	atOptions = { 'key' : 'a428a5ab727ecc8479222c3a933da8a6', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://www.highrevenueformat.com/a428a5ab727ecc8479222c3a933da8a6/invoke.js"></script>
+  </div>
+
+  <a href="blog-how-to-use-claude-ai.html" class="blog-card">
+    <span class="date-tag">September 2026 • Tutorial</span>
+    <h2>How to Use Claude AI: Step-by-Step Guide</h2>
+    <p>A complete guide to Anthropic's most human-like AI. From signing up to writing complex prompts.</p>
+    <span class="read-more">Read Article →</span>
+  </a>
+
 </main>
 
-<!-- AD #3: SOCIAL BAR -->
+<footer style="border-top:1px solid var(--rule); padding:30px 6vw; text-align:center; font-size:12px; color:var(--ink-soft);">
+  AI STACKROOM NEWS & BLOG · October 2026 · <a href="mailto:mehranbaig309@gmail.com" style="color:var(--indigo);">Contact Us</a>
+</footer>
+
+<!-- ADSTERRA #4: SOCIAL BAR -->
 <script src="https://pl31580204.profitableratecpmnetwork.com/63/b6/07/63b6075b2ac5cb0395981578d1faf734.js"></script>
+
 </body>
 </html>
